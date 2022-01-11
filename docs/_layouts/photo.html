@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+{% include i18n/i18n %}
+
+<div class="photo wrapper">
+
+    <div class="page-header">
+        <h1 class="page-title">{{ page.title }}</h1>
+    </div>
+
+    <figure>
+        <img src="{{ page.image | default: default_page.image | prepend: site.baseurl }}" {% if page.image_alt %}alt="{{ page.image_alt }}"{% endif %}>
+        {% if page.caption %}
+        <figcaption>{{ page.caption }}</figcaption>
+        {% endif %}
+    </figure>
+    <hr>
+    <div class="text text-wrapper">
+        <p>
+            <strong>{{ strings.author }}:</strong>
+            {{ page.author | default: default_page.author }}<br>
+            <strong>{{ strings.date }}:</strong>
+            {% assign date_published = page.date_published | default: default_page.date_published %}{% include i18n/date date=date_published format="long" %}<br>
+            <strong>{{ strings.location }}:</strong>
+            {{ page.location | default: default_page.location }}<br>
+            <strong>{{ strings.link }}:</strong>
+            <a href="{{ page.link | default: default_page.link }}" target="_blank" rel="noopener">unsplash.com</a>
+        </p>
+    </div>
+
+</div>

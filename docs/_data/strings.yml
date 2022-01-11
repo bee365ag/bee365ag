@@ -1,0 +1,11 @@
+language_selector: Language Selector
+
+author: Autor
+date: Datum
+location: Location
+link: Link
+
+date_formats:
+  full: "%A, %e %B %Y"
+  long: "%d %B %Y"
+  short: "%d.%m.%Y"
