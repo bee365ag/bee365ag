@@ -1,22 +1,28 @@
-<nav aria-label="{{ locale_strings.language_selector }}">
+<ul class="navbar-nav me-auto mb-2 mb-lg-0" aria-label="{{ locale_strings.language_selector }}">
     {% for locale in site.locales %}
-        {% assign label = locale[0] %}
-        {% assign locale_object = locale[1] %}
-        {% if label == page.locale %}
-    <a class="btn btn-sm"
-       href="{{ page.url | prepend: site.baseurl }}"
-       aria-current="true">{{ locale_object.flag }}</a>
-        {% else %}
-            {% assign localized_page = localized_pages | where: "locale", label | first %}
-            {% if localized_page %}
-    <a class="btn btn-sm"
-       href="{{ localized_page.url | prepend: site.baseurl }}"
-       hreflang="{{ locale_object.lang }}">{{locale_object.flag }}</a>
-            {% else %}
-    <a class="btn btn-sm disabled"
-       href="{{ locale_object.baseurl | prepend: site.baseurl }}/"
-       hreflang="{{ locale_object.lang }}">{{ locale_object.flag }}</a>
-            {% endif %}
-        {% endif %}
+    {% assign label = locale[0] %}
+    {% assign locale_object = locale[1] %}
+    {% if label == page.locale %}
+    <li class="nav-item">
+        <a class="nav-link"
+           href="{{ page.url | prepend: site.baseurl }}"
+           aria-current="true">{{ locale_object.flag }}</a>
+    </li>
+    {% else %}
+    {% assign localized_page = localized_pages | where: "locale", label | first %}
+    {% if localized_page %}
+    <li class="nav-item">
+        <a class="nav-link"
+           href="{{ localized_page.url | prepend: site.baseurl }}"
+           hreflang="{{ locale_object.lang }}">{{locale_object.flag }}</a>
+    </li>
+    {% else %}
+    <li class="nav-item">
+        <a class="nav-link disabled"
+           href="{{ locale_object.baseurl | prepend: site.baseurl }}/"
+           hreflang="{{ locale_object.lang }}">{{ locale_object.flag }}</a>
+    </li>
+    {% endif %}
+    {% endif %}
     {% endfor %}
-</nav>
+</ul>

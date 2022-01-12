@@ -1,20 +1,63 @@
-<nav class="site-nav">
-  <ul>
+<ul class="navbar-nav me-auto mb-2 mb-lg-0">
     {% assign current_url = page.url %}
     {% assign pages_collection = "pages" | append: page.collection_suffix %}
     {% assign pages = site[pages_collection] %}
-    {% for document_id in site.navigation %}
-      {% for page in pages %}
-        {% include i18n/document_id obj=page %}
-        {% if obj_document_id == document_id %}
-    <li>
-      <a href="{{ page.url | prepend: site.baseurl }}" {% if page.url == current_url %}aria-current="page"{% endif %}>
-        {{ page.title | escape }}
-      </a>
+
+    {% for main in site.navigation %}
+        {% for outer in main %}
+            {% assign document_id = outer[0] %}
+            {% for outerpage in pages %}
+                {% include i18n/document_id obj=outerpage %}
+                {% if obj_document_id == document_id %}
+                    {% if outer[1] %}
+                        {% assign hasChildren = false %}
+                        {% for inner in outer[1] %}
+                            {% for innerpage in pages %}
+                                {% include i18n/document_id obj=innerpage %}
+                                {% if obj_document_id == inner %}
+                                    {% assign hasChildren = true %}
+                                    {% break %}
+                                {% endif %}
+                            {% endfor %}
+                        {% endfor %}
+                        {% if hasChildren %}
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle"
+           href="#"
+           id="nav{{document_id}}"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            {{ outerpage.title | escape }}
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="nav{{document_id}}">
+                            {% for inner in outer[1] %}
+                                {% for innerpage in pages %}
+                                    {% include i18n/document_id obj=innerpage %}
+                                    {% if obj_document_id == inner %}
+            <li>
+                <a class="dropdown-item"
+                   href="{{ innerpage.url | prepend: site.baseurl }}">
+                    {{ innerpage.title | escape }}
+                </a>
+            </li>
+                                        {% break %}
+                                {% endif %}
+                                {% endfor %}
+                            {% endfor %}
+        </ul>
     </li>
-          {% break %}
-        {% endif %}
-      {% endfor %}
+                        {% endif %}
+                    {% else %}
+    <li class="nav-item">
+        <a class="nav-link" href="{{ outerpage.url | prepend: site.baseurl }}">
+            {{ outerpage.title | escape }}
+        </a>
+    </li>
+                        {% break %}
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
     {% endfor %}
-  </ul>
-</nav>
+</ul>

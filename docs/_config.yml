@@ -78,7 +78,10 @@ defaults:
       permalink: "/en/"
 
 navigation:
-  - home
+  - beeSpaces/index:
+    - beeSpaces/api
+    - beeSpaces/errors
+  - beeConnect/index:
 
 # Build settings
 theme: minima
