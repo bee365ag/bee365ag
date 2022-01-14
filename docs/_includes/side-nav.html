@@ -1,0 +1,56 @@
+{%- assign locale = include.locale | default: page.locale -%}
+{%- assign nav_items = site.data[page.navigation].items -%}
+{%- assign nav_index = site.data[page.navigation].index -%}
+
+{%- assign localized_collection = 'pages' -%}
+{%- if locale != 'default' %}
+{%- assign localized_collection = localized_collection | append: '_' | append: locale %}
+{%- assign path = path | prepend: '/' | prepend: localized_collection | prepend: '_' -%}
+{%- endif -%}
+
+{%- assign link_pages = site[localized_collection] %}
+
+{% include i18n/document_id obj=page %}
+{%- assign document_id = obj_document_id %}
+
+{% for navpage in link_pages %}
+{% include i18n/document_id obj=navpage %}
+{% if obj_document_id == nav_index %}
+{% if obj_document_id == document_id %}
+<a href="{{navpage.url | prepend: site.baseurl }}"
+   class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
+    <span class="fs-4">{{navpage.title | escape }}</span>
+</a>
+{% else %}
+<a href="{{navpage.url | prepend: site.baseurl }}"
+   class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+    <span class="fs-4">{{navpage.title | escape }}</span>
+</a>
+{% endif %}
+{% break %}
+{% endif %}
+{% endfor %}
+
+<ul class="nav nav-pills flex-column mb-auto">
+    {% for item in nav_items %}
+    {% for navpage in link_pages %}
+    {% include i18n/document_id obj=navpage %}
+    {% if obj_document_id == item %}
+    <li class="nav-item">
+        {% if obj_document_id == document_id %}
+        <a href="{{navpage.url | prepend: site.baseurl }}"
+           class="nav-link active bg-secondary">
+            {{ navpage.title | escape }}
+        </a>
+        {% else %}
+        <a href="{{navpage.url | prepend: site.baseurl }}"
+           class="nav-link link-dark">
+            {{ navpage.title | escape }}
+        </a>
+        {% endif %}
+    </li>
+    {% break %}
+    {% endif %}
+    {% endfor %}
+    {% endfor %}
+</ul>

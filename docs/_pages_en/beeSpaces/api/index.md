@@ -1,5 +1,6 @@
 ---
-layout: page
+layout: docs
+navigation: beespaces_api
 title: API
 ---
 

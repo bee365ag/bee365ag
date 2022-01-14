@@ -1,0 +1,5 @@
+index: beeSpaces/api/index
+items:
+- beeSpaces/api/architecture
+- beeSpaces/api/basic-usage
+- beeSpaces/api/advanced-usage
