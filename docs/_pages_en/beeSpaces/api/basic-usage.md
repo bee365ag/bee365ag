@@ -64,6 +64,8 @@ As stated in the {% include i18n/link path='beeSpaces/api/architecture.md' %} se
 lists to manage orders. Therefore, the order data must be aligned with the SharePoint-ContentTypes used in the lists. 
 As a small example the `Projekt (Team Workspace)` content type from the basic setup has the following "columns":
 
+<div class="table-responsive" markdown="1">
+
 | Display Name  | Field         | Type              | Status   |
 |:--------------|:--------------|:------------------|:---------|
 | WorkspaceType | WorkspaceType | Choice            | Hidden   |
@@ -72,7 +74,9 @@ As a small example the `Projekt (Team Workspace)` content type from the basic se
 | Owner         | Owner         | User              | Required |
 | Member        | Member        | User              | Optional |
 | Titel         | Title         | Text, Single Line | Required |
-{: class="table table-striped"}
+{: .table .table-striped }
+
+</div>
 
 The ``POST`` body could look like the following:
 
