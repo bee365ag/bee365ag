@@ -2,11 +2,13 @@
     padding: 1rem 1rem;
 }
 
-.bee-layout-docs {
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-template-areas: "sidebar main";
-    gap: 1.5rem;
+@media(min-width: 768px) {
+    .bee-layout-docs {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        grid-template-areas: "sidebar main";
+        gap: 1.5rem;
+    }
 }
 
 .bee-layout-docs-nav {
