@@ -1,0 +1,32 @@
+{%- assign type = include.type | default: 'info' -%}
+{%- assign caption = include.caption | default: 'Info' -%}
+{%- assign icon = include.icon | default: 'true' -%}
+
+<div class="alert alert-{{type}} rounded" role="alert">
+    {% if icon == 'true' %}
+    <div class="alert-heading fw-bolder">
+        {% case type %}
+        {% when 'primary' %}
+            <i class="bi bi-sticky-fill"></i>
+        {% when 'secondary' %}
+            <i class="bi bi-sticky-fill"></i>
+        {% when 'success' %}
+            <i class="bi bi-check-circle-fill"></i>
+        {% when 'danger' %}
+            <i class="bi bi-x-octagon-fill"></i>
+        {% when 'warning' %}
+            <i class="bi bi-exclamation-triangle-fill"></i>
+        {% when 'info' %}
+            <i class="bi bi-info-circle-fill"></i>
+        {% when 'light' %}
+            <i class="bi bi-lightbulb-fill"></i>
+        {% when 'dark' %}
+            <i class="bi bi-lightbulb-fill"></i>
+        {% endcase %}
+        {{caption}}
+    </div>
+    {% else %}
+    <div class="alert-heading fw-bolder">{{caption}}</div>
+    {% endif %}
+    <p markdown="span" class="mb-0">{{ include.content }}</p>
+</div>

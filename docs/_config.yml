@@ -79,12 +79,14 @@ defaults:
 
 navigation:
   - beeSpaces/index:
-    - beeSpaces/api
+    - beeSpaces/api/index
     - beeSpaces/errors
   - beeConnect/index:
 
 # Build settings
 theme: minima
+markdown: kramdown
+highlighter: rouge
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
