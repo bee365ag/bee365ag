@@ -1,6 +1,6 @@
 ---
 layout: error
-title: 👩‍💻 Fehlerhaft Konfiguration
+title: 👩‍💻 Fehlerhafte Konfiguration
 ---
 
 Es liegt ein Fehler in der Cloud-Konfiguration vor. Bitte kontaktiere
