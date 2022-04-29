@@ -1,7 +1,7 @@
 ---
 layout: homepage
 title: Home
-headline: Hallo 👋
+headline: Herzlich willkommen 👋
 description: Informationen und Dokumentation von bee365-Produkten
 ---
 
