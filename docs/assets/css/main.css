@@ -12,6 +12,7 @@
 }
 
 .bee-layout-docs-nav {
+    margin-top: 0.9rem;
     grid-area: sidebar;
     min-width: 0;
     align-self: start;
@@ -20,4 +21,31 @@
 .bee-layout-docs-main {
     grid-area: main;
     min-width: 0;
+}
+
+.bee-layout-docs-main h1 {
+    margin-bottom: 2rem;
+}
+
+.bee-layout-docs-main > h2,
+.bee-layout-docs-main > h3,
+.bee-layout-docs-main > h4,
+.bee-layout-docs-main > h5 {
+    margin-top: 1em;
+}
+
+.bee-layout-toc {
+    -padding: 1rem;
+    -border: 1px solid black;
+    margin: 1rem 0 3rem 0;
+    width: 30vw;
+    font-size: 0.9em;
+    -border-bottom: 1px solid lightgrey;
+}
+
+.bee-layout-toc ul:first-child {
+    padding: 0;
+}
+.bee-layout-toc ul > li:first {
+    list-style-position: inside;
 }

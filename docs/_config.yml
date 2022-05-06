@@ -79,6 +79,8 @@ defaults:
 
 navigation:
   - beeSpaces/index:
+    - beeSpaces/intro/index
+    - beeSpaces/product/index
     - beeSpaces/api/index
     - beeSpaces/errors
   - beeConnect/index:

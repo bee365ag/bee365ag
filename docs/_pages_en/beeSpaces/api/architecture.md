@@ -13,7 +13,7 @@ This page doesn't include a detailed product architecture. For the sake of compl
 {% endcapture %}
 {% include alert.html type='info' caption='Note' content=content %}
 
-{% include figure.html alt='beeSpaces setup' src='/assets/images/architecture.png' %}
+{% include figure.html alt='beeSpaces setup' src='/assets/images/beeSpaces/architecture.png' %}
 
 The above pictures roughly illustrates a *beeSpaces* setup. The default usage (without API) is controlled
 by the *Wizard* installed on the target environment. The *Wizard* processes the `Workspace Templates`
