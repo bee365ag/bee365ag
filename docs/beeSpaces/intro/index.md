@@ -1,6 +1,6 @@
 ---
 layout: docs
-navigation: beespaces_intro
+navigation: beespaces
 title: Einführung
 ---
 

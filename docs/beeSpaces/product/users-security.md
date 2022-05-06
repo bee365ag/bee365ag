@@ -1,6 +1,6 @@
 ---
 layout: docs
-navigation: beespaces_product
+navigation: beespaces
 title: Benutzer und Security
 ---
 
