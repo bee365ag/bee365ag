@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+{% include i18n/i18n %}
 
 <div class="bee-layout-docs">
     <aside class="bee-layout-docs-nav">
@@ -8,11 +9,14 @@ layout: default
     </aside>
     <div class="bee-layout-docs-main">
         <h1>{{ page.title }}</h1>
-
+        
+        {% if page.hideToc %}
+        {% else %}
         <div class="bee-layout-toc">
-            <h5>Inhalt</h5>
+            <h5>{{ strings.tocHeader }}</h5>
             {% include toc.html html=content %}
         </div>
+        {% endif %}
 
         {{ content }}
     </div>

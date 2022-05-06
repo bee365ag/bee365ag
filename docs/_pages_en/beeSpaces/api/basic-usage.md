@@ -2,6 +2,7 @@
 layout: docs
 navigation: beespaces_api
 title: Basic Usage
+hideToc: true
 ---
 
 The usage of the *beeSpaces-API* is pretty straightforward, it's a single `HTTP-POST`. The data that needs to

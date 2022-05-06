@@ -2,6 +2,7 @@
 layout: docs
 navigation: beespaces_api
 title: API
+hideToc: true
 ---
 
 _beeSpaces_ is a service for provisioning Teams and SharePoint environments 

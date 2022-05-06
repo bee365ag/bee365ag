@@ -4,6 +4,7 @@ author: Author
 date: Date
 location: Location
 link: Link
+tocHeader: Content
 
 date_formats:
   full: "%A, %e %B %Y"

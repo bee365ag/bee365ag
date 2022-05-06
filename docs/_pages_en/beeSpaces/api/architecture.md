@@ -2,6 +2,7 @@
 layout: docs
 navigation: beespaces_api
 title: Architecture
+hideToc: true
 ---
 
 It's not required to have a deep understanding of the *beeSpaces* architecture to use the API, but it may helps

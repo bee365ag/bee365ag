@@ -1,0 +1,9 @@
+navigation:
+- index: beeConnect/intro/index
+  items:
+  - beeConnect/intro/index
+  - beeConnect/intro/prerequisites
+  - beeConnect/product/index
+  - beeConnect/product/architecture
+  - beeConnect/product/users-security
+  - beeConnect/product/journey

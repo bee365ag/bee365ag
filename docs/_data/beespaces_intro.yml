@@ -1,3 +1,4 @@
-index: beeSpaces/intro/index
-items:
-- beeSpaces/intro/prerequisites
+navigation: 
+- index: beeSpaces/intro/index
+  items:
+  - beeSpaces/intro/prerequisites

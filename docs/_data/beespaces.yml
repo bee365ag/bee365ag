@@ -1,8 +1,11 @@
-index: beeSpaces/intro/index
-items:
-- beeSpaces/intro/index
-- beeSpaces/intro/prerequisites
-- beeSpaces/product/index
-- beeSpaces/product/architecture
-- beeSpaces/product/users-security
-- beeSpaces/product/journey
+navigation:
+- index: beeSpaces/intro/index
+  items:
+  - beeSpaces/intro/index
+  - beeSpaces/intro/prerequisites
+- index: beeSpaces/product/index
+  items:
+  - beeSpaces/product/index
+  - beeSpaces/product/architecture
+  - beeSpaces/product/users-security
+  - beeSpaces/product/journey

@@ -1,6 +1,9 @@
 {%- assign locale = include.locale | default: page.locale -%}
-{%- assign nav_items = site.data[page.navigation].items -%}
-{%- assign nav_index = site.data[page.navigation].index -%}
+{%- assign nav_blocks = site.data[page.navigation].navigation -%}
+
+{% for block in nav_blocks %}
+{%- assign nav_items = block.items -%}
+{%- assign nav_index = block.index -%}
 
 {%- assign localized_collection = 'pages' -%}
 {%- if locale != 'default' %}
@@ -18,20 +21,20 @@
 {% if obj_document_id == nav_index %}
 {% if obj_document_id == document_id %}
 <a href="{{navpage.url | prepend: site.baseurl }}"
-   class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
-    <span class="fs-4">{{navpage.title | escape }}</span>
+class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
+<span class="fs-4">{{navpage.title | escape }}</span>
 </a>
 {% else %}
 <a href="{{navpage.url | prepend: site.baseurl }}"
-   class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-    <span class="fs-4">{{navpage.title | escape }}</span>
+class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+<span class="fs-4">{{navpage.title | escape }}</span>
 </a>
 {% endif %}
 {% break %}
 {% endif %}
 {% endfor %}
 
-<ul class="nav nav-pills flex-column mb-auto">
+<ul class="nav nav-pills flex-column mb-3">
     {% for item in nav_items %}
     {% for navpage in link_pages %}
     {% include i18n/document_id obj=navpage %}
@@ -39,18 +42,20 @@
     <li class="nav-item">
         {% if obj_document_id == document_id %}
         <a href="{{navpage.url | prepend: site.baseurl }}"
-           class="nav-link active bg-secondary">
-            {{ navpage.title | escape }}
+        class="nav-link active bg-secondary">
+        {{ navpage.title | escape }}
         </a>
         {% else %}
         <a href="{{navpage.url | prepend: site.baseurl }}"
-           class="nav-link link-dark">
-            {{ navpage.title | escape }}
+        class="nav-link link-dark">
+        {{ navpage.title | escape }}
         </a>
-        {% endif %}
+    {% endif %}
     </li>
     {% break %}
     {% endif %}
     {% endfor %}
     {% endfor %}
 </ul>
+
+{% endfor %}
