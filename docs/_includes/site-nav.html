@@ -14,19 +14,19 @@
                         {% for inner in outer[1] %}
                             {% for innerpage in pages %}
                                 {% include i18n/document_id obj=innerpage %}
-                                {% assign pageAbsoluteUrl = page.url  | absolute_url %}
-                                {% if pageAbsoluteUrl contains outerpage.url %}
-                                    {% assign navLinkIsActive = true %}
-                                {% endif %}
                                 {% if obj_document_id == inner %}
                                     {% assign hasChildren = true %}
                                     {% break %}
                                 {% endif %}
                             {% endfor %}
                         {% endfor %}
+                        {% assign pageAbsoluteUrl = page.url  | absolute_url %}
+                        {% if pageAbsoluteUrl contains outerpage.url %}
+                            {% assign navLinkIsActive = true %}
+                        {% endif %}
                         {% if hasChildren %}
     <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle{%if navLinkIsActive %} active{% endif %}"
+        <a class="nav-link dropdown-toggle{%if pageAbsoluteUrl contains outerpage.url %} active{% endif %}"
            href="#"
            id="nav{{document_id}}"
            role="button"
@@ -54,7 +54,7 @@
                         {% endif %}
                     {% else %}
     <li class="nav-item">
-        <a class="nav-link" href="{{ outerpage.url | prepend: site.baseurl }}">
+        <a class="nav-link {%if pageAbsoluteUrl contains outerpage.url %} active{% endif %}" href="{{ outerpage.url | prepend: site.baseurl }}">
             {{ outerpage.title | escape }}
         </a>
     </li>
