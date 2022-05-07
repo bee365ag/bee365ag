@@ -12,9 +12,10 @@ layout: default
         
         {% if page.hideToc %}
         {% else %}
-        <div class="bee-layout-toc">
-            <h5>{{ strings.tocHeader }}</h5>
-            {% include toc.html html=content %}
+        
+        <div class="bee-layout-toc col-sm-12 col-md-6">
+            <dt>{{ strings.tocHeader }}</dt>
+            {% include toc.html html=content class="list-unstyled" id="bee-layout-toc" %}
         </div>
         {% endif %}
 

@@ -34,18 +34,9 @@
     margin-top: 1em;
 }
 
-.bee-layout-toc {
+ .bee-layout-toc {
     -padding: 1rem;
     -border: 1px solid black;
     margin: 1rem 0 3rem 0;
-    width: 30vw;
     font-size: 0.9em;
-    -border-bottom: 1px solid lightgrey;
-}
-
-.bee-layout-toc ul:first-child {
-    padding: 0;
-}
-.bee-layout-toc ul > li:first {
-    list-style-position: inside;
 }
