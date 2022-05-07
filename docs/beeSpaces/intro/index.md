@@ -27,9 +27,11 @@ Kollaborative Arbeitsbereiche sind viel nützlicher, wenn sie konsistent und lei
         <dt class="col-sm-3">Workspace Templates</dt>
         <dd class="col-sm-9">«Bausteine» mit der Definition der individuellen Arbeitsbereiche und deren für die Bereitstellung erforderlichen Parameter</dd>
         <dt class="col-sm-3">Workspace Resources</dt>
-        <dd class="col-sm-9" markdown="span">deklarative Modelle zur inhaltlichen Beschreibung (technischer Aufbau) der bereitzustellenden Arbeitsbereiche nach einem verbreiteten [de Facto-Standard (PnP Provisioning Framework)](https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/pnp-provisioning-framework){:target="_blank"}</dd>
+        <dd class="col-sm-9" markdown="span">deklarative Modelle zur inhaltlichen Beschreibung (technischer Aufbau) der bereitzustellenden Arbeitsbereiche nach einem weit verbreiteten [de Facto-Standard (PnP Provisioning Framework)](https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/pnp-provisioning-framework){:target="_blank"}</dd>
     </dl>
   </dd>
+  <dt class="col-sm-3">Teams-App</dt>
+  <dd class="col-sm-9" markdown="span">Vollintegration des Bestellportals als eigene App für *Microsoft Teams*; aus Benutzersicht besteht die Möglichkeit der Bestellung von Arbeitsbereiche direkt aus *Microsoft Teams* heraus</dd>
 </dl>
 
 
