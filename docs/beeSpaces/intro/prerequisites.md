@@ -7,7 +7,7 @@ title: Anforderungen
 ## Microsoft 365
 ### Sicherheit
 #### Multi Factor Authentication und Conditional Access
-**MFA** und **Conditional Access** müssen zwingend deaktiviert sein. Dies gilt grundsätzlich für den verwendeten Service-Benutzer, die App-Registrierung (Azure AD) «PnP Management Shell» sowie die App Registrierung (Azure AD) «beeSpaces».
+**MFA** und **Conditional Access** müssen zwingend deaktiviert sein. Dies gilt grundsätzlich für den verwendeten Service-Benutzer, die App-Registrierung (Azure AD) «PnP Management Shell» sowie die App Registrierung (Azure AD) «beeSpaces» (siehe {% include i18n/link path='beeSpaces/product/architecture.md' %}).
 
 {% capture content %}
 Nicht deaktiviertes MFA und CA-Policies behindern die korrekt Funktionsweise von beeSpaces im Zusammenspiel zwischen kundenseitigem Setup und zentraler Bereitstellung der Services bei bee365.
@@ -23,8 +23,8 @@ Der Service Automation Benutzer (bzw. der ausführende Service Benutzer) benöti
 {% endcapture %}
 {% include alert.html type='warning' caption='Empfehlung' content=content %}
 
-#### Request Processing: User Approvals oder andere vorgeschaltene Workflows 
-Falls Genehmigung oder limitierte Berechtigungen (bestimmte Workspaces können nicht durch jeden Benutzer bestellt werden) notwendig sind, muss zusätzlich eine PowerAutomate per user plan Lizenz offeriert werden und dem Service Automation Benutzer diese Lizenz zugewiesen werden. Diese können aktuell nur via PowerAutomate realisiert werden. 
+#### Request Processing: Genehmigungen oder andere vorgeschaltene Workflows zur Überprüfung 
+Falls Genehmigungen oder Prüfmechanismen notwendig sind, so muss dies eigenständig in einer Workflow Engine realisiert werden (bspw. mittels *Power Automate*, *Azure Logic Apps* oder einer beliebigen Dritthersteller-Applikation zu diesem Zwecke). Dafür notwendige Lizenzen sowie deren Beschaffung liegen ausserhalb des Zuständigkeitsbereichs von bee365. 
 
 
 ## beeSpaces

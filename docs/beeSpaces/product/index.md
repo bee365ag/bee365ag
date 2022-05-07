@@ -31,10 +31,10 @@ Der Bestellprozess ist in 4 (respektive 5, sofern **Lebenszyklus** aktiv ist) Ph
 {% include figure.html alt='Benutzer-Flow (Standard)' src='/assets/images/beeSpaces/provisioning-ofw-chooseTemplate.png' %}
 
 
-### Approvals (nicht im Standard von beeSpaces enthalten)
-Mithilfe von Approvals kann die Erstellung von Workspaces zusätzlich Kontrolliert werden. Je nach Workspace Template kann ein Approval Prozess hinterlegt werden, bei welchem zuerst die definierte Approver-Group den Workspace genehmigen muss. Anschliessend wir der Stand Provisioning Prozess gestartet.
+### Genehmigungen (nicht im Standard von beeSpaces enthalten)
+Mithilfe von Genehmigungen (sog. «Approvals») kann die Erstellung von Workspaces zusätzlich kontrolliert werden. Je nach *Workspace Template* kann ein Approval Prozess hinterlegt werden, bei welchem zuerst eine oder mehrere definierte Approver-Groups die Bestellung genehmigen müssen. Anschliessend wird der Standard-Provisioning Prozess gestartet.
 
-Diese Prozess wird bspw. mithilfe von Power Automate, Logic Apps oder einer beliebigen Workflow-Engine eines Drittherstellers (Cloud-Produkt) realisiert und setzt eine entsprechende Lizenzierung voraus.
+Genehmigungsprozesse werden bspw. mithilfe von *Power Automate*, *Azure Logic Apps* oder einer beliebigen Workflow-Engine eines Drittherstellers (Cloud-Produkt) realisiert und setzen eine entsprechende Lizenzierung voraus.
 
 {% capture content %}
 bee365 ag implementiert KEINE Approval-Flows im Basis-Setup von *beeSpaces*. Dessen Implementierung (und die damit verbundene Business-Logik) ist Sache des Kunden.
