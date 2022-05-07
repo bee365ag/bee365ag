@@ -2,6 +2,7 @@ navigation:
 - index: beeSpaces/intro/index
   items:
   - beeSpaces/intro/prerequisites
+  - beeSpaces/intro/installation
 - index: beeSpaces/product/index
   items:
   - beeSpaces/product/architecture

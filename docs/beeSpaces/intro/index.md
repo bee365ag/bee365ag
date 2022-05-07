@@ -35,11 +35,11 @@ Kollaborative Arbeitsbereiche sind viel nützlicher, wenn sie konsistent und lei
 </dl>
 
 
-## Addons
-Das Funktionsspektrum von *beeSpaces* kann mit zusätzlichen Addons gewinnbringend erweitert werden:
+## Add-ons
+Das Funktionsspektrum von *beeSpaces* kann mit zusätzlichen Add-ons gewinnbringend erweitert werden:
 
 <dl class="row">
-  <dt class="col-sm-3">Lifecycle Addon</dt>
+  <dt class="col-sm-3">Lifecycle Add-on</dt>
   <dd class="col-sm-9">ermöglicht die individuelle Definition und Überwachung gewünschter Lebenszyklen für Arbeitsbereiche mit automatisierter Archivierung</dd>
   
   <dt class="col-sm-3">beeSpaces Insights</dt>
