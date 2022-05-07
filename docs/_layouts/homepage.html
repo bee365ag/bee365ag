@@ -4,17 +4,20 @@ layout: default
 
 {% include i18n/i18n %}
 
-<div class="banner">
-  {% if page.banner_image or default_page.banner_image %}
-  <img src="{{ page.banner_image | default: default_page.banner_image | prepend: site.baseurl }}" alt="">
-  {% endif %}
-  <h1 class="headline">{{ page.headline }}</h1>
-</div>
-
-<div class="page wrapper">
-
-  <div class="page-content text text-wrapper">
+<div class="px-2 pt-5 my-5 text-center">
+  <h1 class="display-4 fw-bold">{{ page.headline }}</h1>
+  <div class="col-lg-8 pt-3 my-3 mx-auto">
     {{ content }}
+    <!-- <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+      <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Primary button</button>
+      <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+    </div> -->
   </div>
-
+  <div class="overflow-hidden" style="max-height: 40vh;">
+    {% if page.banner_image or default_page.banner_image %}
+    <div class="container px-2 pt-3">
+      <img src="{{ page.banner_image | default: default_page.banner_image }}" class="img-fluid border rounded-3 shadow-lg mb-8" alt="banner" width="840" height="700" loading="lazy">
+    </div>
+    {% endif %}
+  </div>
 </div>
