@@ -2,6 +2,7 @@
 layout: docs
 navigation: beespaces
 title: Einführung
+hideToc: true
 ---
 
 Kollaborative Arbeitsbereiche sind viel nützlicher, wenn sie konsistent und leicht zu erstellen sind. Dies gilt für *SharePoint Online*, *Microsoft Teams* und jedes weitere Produkt, welches dem Konzept der organisierten Zusammenarbeit in Arbeitsbereichen entspricht. Mit *beeSpaces* erhalten Sie ein Konzept, welches die **Einhaltung von Standards** und **Governance** garantiert und mit einem **hohen Automatisierungsgrad** verbindet.
