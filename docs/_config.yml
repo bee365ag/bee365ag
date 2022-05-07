@@ -84,6 +84,8 @@ navigation:
     - beeSpaces/api/index
     - beeSpaces/errors
   - beeConnect/index:
+    - beeConnect/intro/index
+    - beeConnect/product/index
 
 # Build settings
 theme: minima
