@@ -13,9 +13,9 @@ bee365 benötigt zur initialen Bereitstellung und den anschliessenden Betrieb fo
 * Administrator-Account: `Globaler Administrator` (ggf. unter Aufsicht des Kunden); nach Installation ist Downgrade auf `SharePoint Administrator` und `Teams Administrator` möglich
 * dauerhaften Administrator-Account (ohne bestimmte Vorgaben für Naming Convention): `SharePoint Administrator`, `Teams Administrator`
 * dauerhaften Service-Account: `SharePoint Administrator`, `Teams Administrator`
-* MFA und Conditional Access sind für Admin-Account und Service-Account deaktiviert
 * Zugang zum *Tenant App Catalog* (SharePoint Online) des Kunden existiert, Zugang durch Admin-Account (SPO Admin) gewährleistet
 
+{% include alert.html type='warning' caption='Wichtig' content='MFA und Conditional Access müssen für Admin-Account deaktiviert sein' %}
 
 ## SharePoint Framework packages
 Sämtliche von *beeSpaces* verwendeten Custom Webparts sind auf der Basis des *SharePoint Framework (SPFx)* und diversen damit in Verbindung stehenden Code-Bibliotheken und -Paketen aufgebaut. Im Bereitstellungsprozess werden diese pakettiert im *Tenant App Catalog* der SharePoint Online-Umgebung des Kunden verteilt.

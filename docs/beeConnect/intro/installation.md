@@ -13,7 +13,7 @@ bee365 benötigt zur initialen Bereitstellung folgende Zugänge:
 * dauerhaften Administrator-Account (ohne bestimmte Vorgaben für Naming Convention): `SharePoint Administrator`, `Teams Administrator`
 * Zugang zum *Tenant App Catalog* (SharePoint Online) des Kunden existiert, Zugang durch Admin-Account (SPO Admin) gewährleistet
 
-{% include alert.html type='warning' caption='Wichtig' content='MFA und Conditional Access sind für Admin-Account deaktiviert' %}
+{% include alert.html type='warning' caption='Wichtig' content='MFA und Conditional Access müssen für Admin-Account deaktiviert sein' %}
 
 
 ## SharePoint Framework packages
