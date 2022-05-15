@@ -46,7 +46,8 @@ Das Funktionsspektrum von *beeConnect* lässt sich mit einem oder mehreren **Add
 </dd>
 
   <dt class="col-sm-3">Easy Information</dt>
-  <dd class="col-sm-9">Informationssystem zum Aufbau eines Wissensmanagements und der damit in Zusammenhang stehenden unternehmensweiten Publikation von Inhalten / Wissen. 
+  <dd class="col-sm-9">Informationssystem zum Aufbau eines Wissensmanagements und der damit in Zusammenhang stehenden unternehmensweiten Publikation von Inhalten / Wissen, basierend auf den Standards von SharePoint Online.
+
   {% include alert.html type='info' content='Weiterführende Informationen müssen mit einem Consultant besprochen werden.' %}</dd>
 
   <dt class="col-sm-3">Easy QMS</dt>
