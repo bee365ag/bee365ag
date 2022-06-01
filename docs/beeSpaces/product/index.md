@@ -56,4 +56,4 @@ Der Pre Provisioning-Prozess wird von der Provisioning API gestartet und überpr
 ### Post Provisioning
 {% include alert.html type='info' caption='Hinweis' content='Die Post Provisioning-Lösung wird immer im Azure-Tenant des Kunden realisiert.' %}
 
-Der Pre Provisioning-Prozess wird von der Provisioning API gestartet und überprüft. Dabei können dem eigentlichen Provisionierungsprozess nachgelagerte Aktionen ausgeführt werden (bspw. Informationen zum erstellten Workspace in ein [Cloud-basiertes] Drittsystem zurück spielen).
+Der Post Provisioning-Prozess wird von der Provisioning API gestartet und überprüft. Dabei können dem eigentlichen Provisionierungsprozess nachgelagerte Aktionen ausgeführt werden (bspw. Informationen zum erstellten Workspace in ein [Cloud-basiertes] Drittsystem zurück spielen).
