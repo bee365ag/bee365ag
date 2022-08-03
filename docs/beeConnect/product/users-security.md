@@ -41,3 +41,5 @@ Im bereitgestellten *beeConnect Intranet Hub* (in SharePoint Online) sind folgen
     </tr>
 </tbody>
 </table>
+
+Wir empfehlen daher die Erstellung entsprechend **gleich lautender Security Groups** (in der Azure AD bzw. über das M365-Admin Center) sowie deren Mapping zu obigen Benutzerrollen in SharePoint.
