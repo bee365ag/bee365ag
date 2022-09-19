@@ -15,7 +15,7 @@ Empfehlung zur Namensgebung des Dienstbenutzers: `Service Provisioning <service.
 ### Multi Factor Authentication & Conditional Access
 Für den Service-Benutzer muss MFA zwingend deaktiviert sein. Regeln, welche Conditional Access-Einstellungen beinhalten, sind ebenfalls zu deaktivieren.
 
-### Benutzerrollen
+### zugewiesene Benutzerrollen
 Für die Provisionierung von Workspaces (für Teams oder Sites in SharePoint Online) müssen folgende Rollen dem Service-Benutzer zugewiesen werden:
 
 <table class="table table-striped table-responsive">
@@ -58,3 +58,44 @@ Für die Provisionierung von Workspaces (für Teams oder Sites in SharePoint Onl
 Für die intiale Bereitstellung braucht der Service-Benutzer zusätzlich Global Admin-Rechte (App-Registrierungen in der Azure AD), welche nach Abschluss der Bereitstellung für den produktiven Betrieb dem Benutzer wieder entzogen werden können.
 {% endcapture %}
 {% include alert.html type='warning' caption='Wichtig' content=content %}
+
+
+## Allgemeine Benutzerrollen in *beeSpaces*
+Im bereitgestellten Grund-Setup *beeSpaces* (in SharePoint Online) sind folgende Benutzer-Rollen vorgesehen:
+
+<table class="table table-striped table-responsive">
+<thead>
+    <tr>
+        <th>Rolle</th>
+        <th>Bezeichnung</th>
+        <th>Beschreibung</th>
+        <th>Rechte</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>Administratoren</td>
+        <td markdown="span">`Provisioning Administrators`</td>
+        <td>Administratoren im Umfeld von <i>beeSpaces</i> haben Vollzugriff auf alle Elemente (Listen, Pages, …).
+        {% include alert.html type='info' caption='Hinweis' content='Diese Rolle sollte nur internen IT Administratoren zugewiesen werden.' %}
+        </td>
+        <td markdown="span">`Vollzugriff (Full Control)`</td>
+    </tr>
+    <tr>
+        <td>Superusers</td>
+        <td markdown="span">`Provisioning Superusers`</td>
+        <td>Provisioning Superusers sind Mitarbeitende aus dem Business, welche inhaltliche Änderungen an den Elementen am Provisioning-Setup vornehmen dürfen (Templates erstellen und löschen, zusätzliche Ressourcen definieren, …). Änderungen an Berechtigungen sowie dem bereitgestellten Grund-Setup sind nicht möglich.
+        {% include alert.html type='info' caption='Hinweis' content='Diese Rolle ist bestimmt für sogenannte «Super User».' %}
+        </td>
+        <td markdown="span">`Mitwirken (Contribute)`</td>
+    </tr>
+    <tr>
+        <td>Benutzer</td>
+        <td markdown="span">`Provisioning Creators`</td>
+        <td>Diese Benutzergruppe umfasst alle Benutzer:innen (vorzugweise gesammelt in einer AAD Security Group und hier referenziert), welche grundsätzlich Arbeitsbereiche bestellen dürfen / sollen.</td>
+        <td markdown="span">`Bestellen [Workspace bestellen, ohne Editieren]`</td>
+    </tr>
+</tbody>
+</table>
+
+Wir empfehlen, dieses Grund-Setup nicht zu verändern. Ferner sei die Erstellung entsprechend **gleich lautender Security Groups** (in der Azure AD bzw. über das M365-Admin Center) sowie deren Mapping zu obigen Benutzerrollen in SharePoint umzusetzen.
