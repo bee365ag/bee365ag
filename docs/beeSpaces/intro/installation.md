@@ -14,6 +14,7 @@ bee365 benötigt zur initialen Bereitstellung und den anschliessenden Betrieb fo
 * dauerhaften Administrator-Account (ohne bestimmte Vorgaben für Naming Convention): `SharePoint Administrator`, `Teams Administrator`
 * dauerhaften Service-Account: `SharePoint Administrator`, `Teams Administrator`
 * Zugang zum *Tenant App Catalog* (SharePoint Online) des Kunden existiert, Zugang durch Admin-Account (SPO Admin) gewährleistet
+* Zugang zur *Root Page* in SharePoint Online (Home Site) ist für den Service-Account gegeben (Site Administrator)
 
 {% include alert.html type='warning' caption='Wichtig' content='MFA und Conditional Access müssen für Admin-Account deaktiviert sein' %}
 
