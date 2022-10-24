@@ -7,7 +7,7 @@ Ein modernes Intranet erlaubt maximale Anpassungsmöglichkeiten der Newsseite, d
 
 Die Newsgruppen können – wie auch die Linkgruppen in beeEssentials: Relevant Links (Webpart) – zu sogenannten NewsCollectionDefinitions («Newsdefinitions-Blöcke») zusammengefasst und dadurch passgenau den gewünschten AAD-Gruppen bereitgestellt werden. Damit lässt sich mit ein und demselben Webpart beispielsweise ein Newsportal für verschiedene Business Units eines Unternehmens einrichten. 
 
-% include figure.html alt='Benutzer-Flow (Standard)' src='/assets/images/beeConnect/beeEssentials-relevant-news.png' %}
+{% include figure.html alt='Benutzer-Flow (Standard)' src='/assets/images/beeConnect/beeEssentials-relevant-news.png' %}
 
 Die linke Seite 1  wird für die primäre Newsgruppe – die sogenannten Primary News – genutzt, die rechte Seite 2  für die weiteren (sekundären) Posts als sogenannte sekundäre Newsgruppe (Secondary News Group). In der sekundären Newsgruppe können maximal 4 Newsdefinitionen (in obigem Beispiel drei dargestellt) hinterlegt werden, wobei sich die Darstellung entsprechend der Anzahl Newsgruppen anpasst.
 
@@ -70,4 +70,4 @@ Die Höhe des Webparts kann dynamisch festgelegt werden. Das wichtigste Konfigur
 
 Diese Angaben könnnen unter "Deklaration des Newssuche" angepasst werden.
 
-% include figure.html alt='Benutzer-Flow (Standard)' src='/assets/images/beeConnect/beeEssentials-relevant-news-settings.png' %}
+{% include figure.html alt='Benutzer-Flow (Standard)' src='/assets/images/beeConnect/beeEssentials-relevant-news-settings.png' %}

@@ -34,4 +34,4 @@ Nebst dem Anzeigestil, kann auch die Höhe des Webparts dynamisch festgelegt wer
 
 Diese Angaben könnnen unter "Deklaration des Links" angepasst werden.
 
-% include figure.html alt='Benutzer-Flow (Standard)' src='/assets/images/beeConnect/beeEssentials-relevant-links-settings.png' %}
+{% include figure.html alt='Benutzer-Flow (Standard)' src='/assets/images/beeConnect/beeEssentials-relevant-links-settings.png' %}
