@@ -9,6 +9,6 @@ Eine subtile aber dennoch wertvolle Funktion ist die “Download as PDF”-Erwei
 
 {% include figure.html alt='Benutzer-Flow (Standard)' src='/assets/images/beeConnect/bee-DLasPDF.png' %}
 
-Im vergleich zu Anderen, ähnlichen Erweiterungen, verzichtet dieser auf das Einbinden von Drittsystem zur Konvertierung.
+Im vergleich zu Anderen, ähnlichen Erweiterungen, verzichtet dieser auf das Einbinden von Drittsystemen zur Konvertierung.
 
 Folgende Dateitypen werden unterstützt: doc, docx, odp, ods, odt, pot, potm, potx, pps, ppsx, ppsxm, ppt, pptm, pptx, rtf, xls, xlsx
