@@ -8,3 +8,9 @@ navigation:
   - beeConnect/product/installation
   - beeConnect/product/users-security
   - beeConnect/product/journey
+- index: beeConnect/manuals
+  items:
+  - beeConnect/manuals/relevant-links
+  - beeConnect/manuals/relevant-news
+  - beeConnect/manuals/form-buttons
+  - beeConnect/manuals/download-as-pdf
