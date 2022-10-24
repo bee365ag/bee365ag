@@ -56,6 +56,6 @@ Das Funktionsspektrum von *beeConnect* lässt sich mit einem oder mehreren **Add
 </dl>
 
 {% capture content %}
-Add-ons sind in den Grundfuktionen bon *beeConnect* nicht enthalten und müssen separat erworben werden.
+Add-ons sind in den Grundfuktionen von *beeConnect* nicht enthalten und müssen separat erworben werden.
 {% endcapture %}
 {% include alert.html type='warning' caption='Hinweis' content=content %}
