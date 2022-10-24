@@ -86,6 +86,7 @@ navigation:
   - beeConnect/index:
     - beeConnect/intro/index
     - beeConnect/product/index
+    - beeConnect/manuals/index
 
 # Build settings
 theme: minima

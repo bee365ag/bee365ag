@@ -8,7 +8,7 @@ navigation:
   - beeConnect/product/installation
   - beeConnect/product/users-security
   - beeConnect/product/journey
-- index: beeConnect/manuals
+- index: beeConnect/manuals/index
   items:
   - beeConnect/manuals/relevant-links
   - beeConnect/manuals/relevant-news
