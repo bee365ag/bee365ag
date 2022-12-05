@@ -7,7 +7,7 @@ title: Installationshinweise
 Alle zum Betrieb von *beeConnect* notwendigen Komponenten werden von bee365 oder dessen Servicepartner über einen proprietären Bereitstellungsmechanismus initial bereitgestellt. Alle Artefakte werden im SharePoint Online-Tenant des Kunden hinterlegt.
 
 ## Service-Accounts und Zugänge
-### Bereitstellung und Betrieb
+### Bereitstellung
 bee365 benötigt **zur initialen Bereitstellung** folgende Zugänge:
 * Zugriff auf Azure-Tenant und *SharePoint Online*-Admin Center des Kunden
 * Administrator-Account: `Globaler Administrator` (ggf. unter Aufsicht des Kunden); nach Installation ist Downgrade auf `SharePoint Administrator` und `Teams Administrator` möglich

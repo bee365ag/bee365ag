@@ -16,7 +16,7 @@ bee365 benötigt **zur initialen Bereitstellung** folgende Zugänge:
 * Zugang zur *Root Page* in SharePoint Online (Home Site) ist für den Service-Account gegeben (Site Administrator)
 
 Für den anschliessenden **Betrieb** sind folgende Zugänge nötig:
-* dauerhaften Service-Account: `SharePoint Administrator`, `Teams Administrator`
+* dauerhaften Service-Account: `SharePoint Administrator`, `Teams Administrator`, `Groups Administrator`
 * Zugang zur *Root Page* in SharePoint Online (Home Site) ist für den Service-Account gegeben (Site Administrator)
 
 {% include alert.html type='warning' caption='Wichtig' content='MFA und Conditional Access müssen für den Service-Account deaktiviert sein!' %}
