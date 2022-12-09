@@ -13,4 +13,6 @@ navigation:
   - beeConnect/manuals/relevant-links
   - beeConnect/manuals/relevant-news
   - beeConnect/manuals/form-buttons
+  - beeConnect/manuals/graph-data-provider
+  - beeConnect/manuals/html-renderer
   - beeConnect/manuals/download-as-pdf

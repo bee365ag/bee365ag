@@ -47,9 +47,9 @@ Der GraphDataProvider ist nur im Editiermodus ersichtlich.
 
    
 
-* ```Pfad:/groups/{{queryParameters.teamid}}        /users/{{queryParameters.userprincipalname}}```
+-> Pfad:/groups/{{queryParameters.teamid}}        /users/{{queryParameters.userprincipalname}}
 
-* ```Filter: starswith(displayName, '{{queryParameters.projectType}}')```
+-> Filter: starswith(displayName, '{{queryParameters.projectType}}')```
 </td>
         </tr>
     <tr>
@@ -62,7 +62,8 @@ Der GraphDataProvider ist nur im Editiermodus ersichtlich.
         <td>Graph</td>
         <td>API (path)</td>
         <td>Addressiert die eigentliche API bzw. Ressource welche von der API geladen werden soll.</td>
-        <td>```/me/joinedTeams```</td>
+        <td>
+        /me/joinedTeams</td>
         </tr>
     <tr>
         <td></td>
@@ -76,14 +77,14 @@ Der GraphDataProvider ist nur im Editiermodus ersichtlich.
         <td>Selection</td>
         <td>	
 Ermöglicht es das Resultat zu verkleinern und so weniger/keine unnötigen Daten zu laden.</td>
-        <td>```id,displayName```</td>
+        <td>id,displayName</td>
         </tr>
     <tr>
         <td></td>
         <td>Expansion</td>
         <td>	
 Gewisse Resourcen sind mit anderen verknüpft und können mithilfe der Expansion in einem Aufruf geladen werden.</td>
-        <td>```members($select=displayName)```</td>
+        <td>members($select=displayName)</td>
         </tr>
     <tr>
         <td></td>
@@ -91,7 +92,7 @@ Gewisse Resourcen sind mit anderen verknüpft und können mithilfe der Expansion
         <td>	
 	
 Insbesondere Listen können auf die notwendigen Einträge gefiltert werden.</td>
-        <td>```startswith(displayName, 'prj')```</td>
+        <td>startswith(displayName, 'prj')</td>
         </tr>
     <tr>
         <td></td>
@@ -106,7 +107,7 @@ Count liefert ein zusätzliches Attribut, welche die total Anzahl an Elementen b
         <td>	
 	
 Sortiert Listen nach ihren Eigenschaften.</td>
-    <td>        ```displayName,createdDateTime```
+    <td>        displayName,createdDateTime
 
 </td>
         </tr>
@@ -116,7 +117,7 @@ Sortiert Listen nach ihren Eigenschaften.</td>
         <td>	
 	
 Limitiert die zurückgelieferten anzahl der Elemente.</td>
-    <td>```5```</td>
+    <td>5</td>
     </tr>
          <tr>
         <td></td>
@@ -127,14 +128,14 @@ Limitiert die zurückgelieferten anzahl der Elemente.</td>
 {% capture content %}
 Erzeugt man mehrere GraphDataProvider und kombiniert Limitation und Skip geschickt, so können Elemente bspw. auf mehrere Spalten aufgeteilt werden:
 
-* ```/me/joinedTeams → limit=5, skip=0```
+-> * ```/me/joinedTeams → limit=5, skip=0```
 
-* ```/me/joinedTeams → limit=5, skip=5```
+-> * ```/me/joinedTeams → limit=5, skip=5```
 
-* ```/me/joinedTeams → limit=5, skip=10```
+-> * ```/me/joinedTeams → limit=5, skip=10```
 {% endcapture %}
 {% include alert.html type='info' caption='Hinweis' content=content %}</td>
-    <td>```5```</td>
+    <td>5</td>
         </tr>
 </tbody>
 </table>
