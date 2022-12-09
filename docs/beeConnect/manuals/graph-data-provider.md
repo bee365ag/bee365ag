@@ -49,7 +49,7 @@ Der GraphDataProvider ist nur im Editiermodus ersichtlich.
 
 -> Pfad:/groups/{{queryParameters.teamid}}        /users/{{queryParameters.userprincipalname}}
 
--> Filter: starswith(displayName, '{{queryParameters.projectType}}')```
+-> Filter: starswith(displayName, '{{queryParameters.projectType}}')
 </td>
         </tr>
     <tr>
