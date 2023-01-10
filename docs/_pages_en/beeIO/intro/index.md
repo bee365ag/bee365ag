@@ -10,7 +10,7 @@ hideToc: false
 Any endpoint can typically consume or provide data in a given setting and is logically organized in a certain environment.
 
 
-## Service Scope («operational agreements») / non-technically 
+## Service Scope / «operational agreements» (non-technically)
 *beeIO* as a dedicated platform for service transactions and from a conceptual perspective a well-defined business-scenario, is subject to certain definitions of «operational agreements». The scope of these agreements is non-technically, but basically come into effect in a context of  partnership cooperation between bee365 and its regular partners. Hence, the following «service limitations» are well-defined boundaries of business scenarios in which beeIO and its service transactions can be used as a solution candidate:
 
 Provided by at least one *environment connector*, …
