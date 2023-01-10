@@ -78,6 +78,8 @@ defaults:
       permalink: "/en/"
 
 navigation:
+  - beeIO/index:
+    - beeIO/intro/index
   - beeSpaces/index:
     - beeSpaces/intro/index
     - beeSpaces/product/index
