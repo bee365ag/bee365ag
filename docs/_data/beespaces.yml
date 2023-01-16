@@ -3,6 +3,7 @@ navigation:
   items:
   - beeSpaces/intro/prerequisites
   - beeSpaces/intro/installation
+  - beeSpaces/intro/tenant-config
 - index: beeSpaces/product/index
   items:
   - beeSpaces/product/architecture

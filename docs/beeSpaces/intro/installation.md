@@ -4,7 +4,7 @@ navigation: beespaces
 title: Installationshinweise
 ---
 
-Alle zum Betrieb von *beeSpaces* notwendigen Komponenten werden von bee365 über einen proprietären Bereitstellungsmechanismus initial bereitgestellt. Alle Artefakte werden im SharePoint Online-Tenant des Kunden hinterlegt.
+Alle zum Betrieb von *beeSpaces* notwendigen Komponenten werden von bee365 über einen proprietären Bereitstellungsmechanismus initial bereitgestellt. Die dafür benötigten Artefakte sind im SharePoint Online-Tenant des Kunden hinterlegt.
 
 
 ## Service-Accounts und Zugänge

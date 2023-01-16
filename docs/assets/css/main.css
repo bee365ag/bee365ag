@@ -7,7 +7,7 @@
         display: grid;
         grid-template-columns: 1fr 5fr;
         grid-template-areas: "sidebar main";
-        gap: 1.5rem;
+        gap: 4rem;
     }
 }
 
@@ -27,16 +27,27 @@
     margin-bottom: 2rem;
 }
 
-.bee-layout-docs-main > h2,
-.bee-layout-docs-main > h3,
-.bee-layout-docs-main > h4,
-.bee-layout-docs-main > h5 {
-    margin-top: 1em;
+.bee-layout-docs-main>h2,
+.bee-layout-docs-main>h3,
+.bee-layout-docs-main>h4,
+.bee-layout-docs-main>h5 {
+    margin-top: 1.3em;
 }
 
- .bee-layout-toc {
+.bee-layout-toc {
     -padding: 1rem;
     -border: 1px solid black;
     margin: 1rem 0 3rem 0;
     font-size: 0.9em;
+}
+
+.toc-listing {
+    padding-left: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+ul.toc-listing {
+    list-style: circle;
+    list-style-type: disclosure-closed;
+    color: gray;
 }
