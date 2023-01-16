@@ -23,7 +23,7 @@ Der Bestellprozess ist in 4 (respektive 5, sofern **Lebenszyklus** aktiv ist) Ph
 1. `Template`: User wählt das entsprechende Workspace Template aus.
 2. `Details`: Workspace spezifische Details können  / müssen hinterlegt werden. 
 3. `Lebenszyklus`: falls ein Template mit dem Lebenszyklus `lifecycle deadline` ausgewählt wurde, muss diese Deadline in dieser Phase hinterlegt werden. 
-    * Falls der Lebenszyklus `lifecylce lifetime` im Template hinterlegt ist, so wird nur das Berechnet Datum angezeigt. Dies kann vom Enduser nicht bearbeitet werden. 
+    * Falls der Lebenszyklus `lifecycle lifetime` im Template hinterlegt ist, so wird nur das Berechnet Datum angezeigt. Dies kann vom Enduser nicht bearbeitet werden. 
 4. `Zugriffskontrolle`: Workspace Owner muss hinterlegt werden und falls gewünscht Mitglieder
 5. `Überprüfung`: Kontrolle aller hinterlegter Informationen
 
