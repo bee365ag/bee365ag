@@ -5,7 +5,7 @@
 @media(min-width: 768px) {
     .bee-layout-docs {
         display: grid;
-        grid-template-columns: 1fr 5fr;
+        grid-template-columns: 1.3fr 5fr;
         grid-template-areas: "sidebar main";
         gap: 4rem;
     }
@@ -43,6 +43,10 @@
 
 .toc-listing {
     margin-top: 0.5rem;
+    list-style: circle;
+    list-style-type: disclosure-closed;
+    color: gray;
+    padding-left: 1.2rem;
 }
 
 .navbar-brand img.bee-logo {
