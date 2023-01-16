@@ -2,11 +2,14 @@
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggle"
-                    aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+                aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarToggle">
-                <a class="navbar-brand" href="{{ site.baseurl }}{{ locale.baseurl }}/">{{ site.title | escape }}</a>
+                <a class="navbar-brand" href="{{ site.baseurl }}{{ locale.baseurl }}/">
+                    <img src="https://www.bee365.ch/_bee365/uploads/logos/bee365_rgb_hexa_pos_800x800px.png" class="bee-logo"/>
+                    {{ site.title | escape }}
+                </a>
                 {% include site-nav.html %}
                 <div class="d-flex">
                     {% include lang-switcher.html %}

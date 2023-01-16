@@ -42,12 +42,9 @@
 }
 
 .toc-listing {
-    padding-left: 1.2rem;
     margin-top: 0.5rem;
 }
 
-ul.toc-listing {
-    list-style: circle;
-    list-style-type: disclosure-closed;
-    color: gray;
+.navbar-brand img.bee-logo {
+    max-height: 40px;
 }
