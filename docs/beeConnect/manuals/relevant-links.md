@@ -23,6 +23,10 @@ Die linke Seite (1) wird für den primären Link genutzt, die rechte Seite (2) f
 
 {% include figure.html alt='Benutzer-Flow (Standard)' src='/assets/images/beeConnect/beeEssentials-relevant-links-banner.png' %}
 
+## Header-Navigation Darstellung
+
+{% include figure.html alt='Benutzer-Flow (Standard)' src='/assets/images/beeConnect/beeEssentials-relevant-links-header.png' %}
+
 ## Konfiguration und Einstellungen
 Nebst dem Anzeigestil, kann auch die Höhe des Webparts dynamisch festgelegt werden. Das wichtigste Konfigurationselement ist jedoch die Linkdeklaration, welche festlegt welcher Benutzergruppe welche Links gezeigt werden.
 
