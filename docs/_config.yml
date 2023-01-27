@@ -85,10 +85,12 @@ navigation:
     - beeSpaces/product/index
     - beeSpaces/api/index
     - beeSpaces/errors
+    - beeSpaces/releases/notes
   - beeConnect/index:
     - beeConnect/intro/index
     - beeConnect/product/index
     - beeConnect/manuals/index
+    - beeConnect/releases/notes
 
 # Build settings
 theme: minima

@@ -52,3 +52,16 @@
 .navbar-brand img.bee-logo {
     max-height: 40px;
 }
+
+.bee-layout-release-main h1 {
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+.bee-layout-release-main>h2,
+.bee-layout-release-main>h3,
+.bee-layout-release-main>h4,
+.bee-layout-release-main>h5 {
+    margin-top: 1.3em;
+    font-size: 1.2rem;
+}
