@@ -5,11 +5,16 @@ layout: default
 
 <div class="col-lg-10 mx-auto p-3 py-md-10"></div>
 <main class="content flex-grow-1 overflow-auto">
-    <div class="container my-1">
+    <div class="container my-1">        
         <h1>{{ page.title }}</h1>
-
-        <div class="bee-layout-release-main">
-            {{ content }}
+        <div class="bee-layout-release">
+            <div class="bee-layout-release-main">
+                {{ content }}
+            </div>
+            <aside class="bee-layout-toc">
+                <dt>{{ strings.tocHeader }}</dt>
+                {% include toc.html html=content class="list-unstyled toc-listing" id="bee-layout-toc" h_max=1 %}
+            </aside>
         </div>
     </div>
 </main>

@@ -9,7 +9,15 @@
         grid-template-areas: "sidebar main";
         gap: 4rem;
     }
+    .bee-layout-release {
+        display: grid;
+        grid-template-columns: 5fr 1.3fr;
+        grid-template-areas: "main sidebar";
+        gap: 4rem;
+    }
 }
+
+/* DOCS */
 
 .bee-layout-docs-nav {
     margin-top: 0.9rem;
@@ -53,11 +61,31 @@
     max-height: 40px;
 }
 
+/* RELEASE NOTES */
+
+.bee-layout-release-main {
+    grid-area: main;
+    min-width: 0;
+}
+
+.bee-layout-release-nav {
+    margin-top: 0.9rem;
+    grid-area: sidebar;
+    min-width: 0;
+    align-self: start;
+}
+
 .bee-layout-release-main h1 {
+    margin-top: 2.5rem;
     margin-bottom: 1rem;
-    margin-top: 2rem;
     font-size: 1.5rem;
 }
+
+.bee-layout-release-main h1:before {
+    content: "👉";
+    padding-right: 0.5rem;
+}
+
 .bee-layout-release-main>h2,
 .bee-layout-release-main>h3,
 .bee-layout-release-main>h4,
