@@ -80,6 +80,7 @@ defaults:
 navigation:
   - beeIO/index:
     - beeIO/intro/index
+    - beeIO/releases/notes
   - beeSpaces/index:
     - beeSpaces/intro/index
     - beeSpaces/product/index

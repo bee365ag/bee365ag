@@ -1,0 +1,6 @@
+navigation:
+- index: beeSpaces/releases/notes
+  items:
+  - beeSpaces/product/architecture
+  - beeSpaces/product/users-security
+  - beeSpaces/product/journey
