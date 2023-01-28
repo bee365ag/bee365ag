@@ -1,8 +1,10 @@
 ---
 layout: docs
+type: manual
 navigation: beeconnect
-title: "beeEssentials: Relevant News"
+title: "Relevant News (Webpart)"
 ---
+
 Ein modernes Intranet erlaubt maximale Anpassungsmöglichkeiten der Newsseite, damit die Mitarbeiter mit einem Mausklick die nötigen Neuigkeiten lesen können. Mit beeEssentials: Relevant News können die wichtigsten 5 Ankündigungen in eine übersichtliche Darstellung verpackt werden. Die dargestellten können zu sogenannten Newsgruppen (NewsCollections) aggregiert werden, wobei für jede Newsgruppe ein spezifisches News-Query (KQL) sowie gewisse Darstellungsparameter unabhängig eingestellt werden können. Das News-Query erlaubt das Suchen nach Newsposts im gesamten SharePoint-Kontext des Benutzers. Es können jedoch keine externen Newsquellen angesteuert werden.
 
 Die Newsgruppen können – wie auch die Linkgruppen in beeEssentials: Relevant Links (Webpart) – zu sogenannten NewsCollectionDefinitions («Newsdefinitions-Blöcke») zusammengefasst und dadurch passgenau den gewünschten AAD-Gruppen bereitgestellt werden. Damit lässt sich mit ein und demselben Webpart beispielsweise ein Newsportal für verschiedene Business Units eines Unternehmens einrichten. 

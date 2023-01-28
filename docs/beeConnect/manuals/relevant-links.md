@@ -1,7 +1,8 @@
 ---
 layout: docs
+type: manual
 navigation: beeconnect
-title: "beeEssentials: Relevant Links"
+title: "Relevant Links (Webpart)"
 ---
 
 Ein modernes Intranet erlaubt maximale Anpassungsmöglichkeiten der Hauptseite, damit die Mitarbeiter mit einem Mausklick die nötigen Dokumente in den Verzeichnissen finden können. Mit beeEssentials: Relevant Links können die wichtigsten 5 Ablagen in eine übersichtliche Darstellung verpackt werden.

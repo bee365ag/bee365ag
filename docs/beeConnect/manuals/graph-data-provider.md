@@ -1,7 +1,8 @@
 ---
 layout: docs
+type: manual
 navigation: beeconnect
-title: "beeEssentials: Graph Data Provider"
+title: "Graph Data Provider (Webpart)"
 ---
 
 Microsoft Graph ist das Tor zu Daten und Intelligenz in Microsoft 365. Es bietet ein einheitliches Programmierbarkeitsmodell, mit dem Sie auf die enormen Datenmengen in Microsoft 365, Windows und Enterprise Mobility + Security zugreifen können. Mit beeEssentials: Graph Data Provider kann man auf diese Datenmengen der Microsoft Graph API zugreifen, um sie danach mit einem anderen Webpart schön darzustellen. Dies kann beispielsweise mit dem Adaptive Card Webpart oder dem HTML Renderer Webpart umgesetzt werden.
