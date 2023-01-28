@@ -7,7 +7,7 @@ title: "Relevant Links (Webpart)"
 
 Ein modernes Intranet erlaubt maximale Anpassungsmöglichkeiten der Hauptseite, damit die Mitarbeiter mit einem Mausklick die nötigen Dokumente in den Verzeichnissen finden können. Mit dem Webpart *Relevant Links* können die wichtigsten 5 Ablagen bzw. Links dazu in eine übersichtliche Darstellung verpackt und nach Bentzergruppen gesondert präsentiert werden (sog. Audience Targeting).
 
-## Standardkonfiguration
+## Aufbau und Funktionsweise
 Die Linkgruppen werden dazu zu sogenannten *Link Collection Definitions* («Linkdefinitions-Blöcke») zusammengefasst und dadurch passgenau den gewünschten AAD-Gruppen bereitgestellt. Damit lässt sich mit ein und demselben Webpart beispielsweise ein Linkportal für verschiedene Business Units eines Unternehmens einrichten. 
 
 Jede **Linkgruppe** besteht aus zwei Teilen:
@@ -61,7 +61,45 @@ zugehörige Beispielkonfiguration:
   }
 ]
 ```
+## Darstellungsoptionen (ohne Header-Navigation)
+In der sogenannten **Kacheldarstellung** (Standard) wird die linke Seite (1) wie im folgenden Beispiel immer für den primären Link genutzt, die rechte Seite (2) für die sekundären Links:
+
+{% include figure.html alt='Kacheldarstellung (Standard)' src='/assets/images/beeConnect/beeEssentials-relevant-links.png' %}
+
+Es können bis zu vier sekundäre Links hinterlegt werden, wobei sich die Darstellung je nach Anzahl der sekundären Links dynamisch anpasst.
+
+In Bezug auf die Darstellung sind zwei Optionen wählbar:
+### Kacheldarstellung (Standard)
+{% include figure.html alt='Dynamische Darstellung in Abhängigkeit der Anzahl sekundärer Links' src='/assets/images/beeConnect/beeEssentials-relevant-links-dynamic.png' %}
+### Banner Darstellung 
+
+{% include figure.html alt='Bannerdarstellung' src='/assets/images/beeConnect/beeEssentials-relevant-links-banner.png' %}
+
+
+## Darstellungsoptionen (mit Header-Navigation)
+### Header-Navigation Darstellung
+
+{% include figure.html alt='Benutzer-Flow (Standard)' src='/assets/images/beeConnect/beeEssentials-relevant-links-header.png' %}
+
+
+## Konfiguration und Einstellungen
+Nebst dem Anzeigestil, kann auch die Höhe des Webparts dynamisch festgelegt werden. Das wichtigste Konfigurationselement ist jedoch die Linkdeklaration, welche festlegt welcher Benutzergruppe welche Links gezeigt werden.
+
+**Für die Anpassung braucht es:**
+
+* Links für die wichtigsten Seiten abgestuft auf 1-5
+* Bilder für die entsprechenden Links
+* Die Rechtegruppe, für die entsprechende Linkdeklaration
+
+Diese Angaben könnnen unter "Deklaration des Links" angepasst werden.
+
+{% include figure.html alt='Benutzer-Flow (Standard)' src='/assets/images/beeConnect/beeEssentials-relevant-links-settings.png' %}
+
 ### Audience Targeting und Aufbau von Linkgruppen (Linkdeklaration)
+Zur Illustration wird folgendes Szenario verwendet:
+{% include figure.html alt='Kacheldarstellung (Standard)' src='/assets/images/beeConnect/beeEssentials-relevant-links.png' %}
+
+
 Jede Linkgruppe ist gleich aufgebaut und wird über die Webpart-Konfiguration durch einen Administrator nach folgendem Schema definiert:
 
 ```json
@@ -72,12 +110,12 @@ Jede Linkgruppe ist gleich aufgebaut und wird über die Webpart-Konfiguration du
     "description": "Default", // 👈 eine 'human readable' Beschreibung dieser Linkgruppe
     "aadGroupname": "Default", // 👈 Namen der Security Group (AAD), für welche diese Links sichtbar sein sollen
     
-    // 👇 Deklaration des primären Links (1)
+    // 👇 Deklaration des primären Links 1️⃣
     "mainLink": {
       // ...
     },
     "links": [
-      // 👇 Deklaration aller sekundären Links (2) 
+      // 👇 Deklaration aller sekundären Links 2️⃣
       {
         // ... wiederholt sich pro sekundärer Link
       }
@@ -103,41 +141,10 @@ Die **Linkgruppen** werden immer über zwei Attribute – `mainLink` und die Col
 ```json
 // 👇 spezifische Linkdeklaration
 {
-  "name": "Learning Center", // 👈 Angezeigter Titel
+  "name": "Learning Center", // 👈 Angezeigter Titel 3️⃣
   "linkRefUrl": "https://bee365dev.sharepoint.com/sites/M365LP/SitePages/de/Home.aspx", // 👈 gewünschte Ziel-URL (Link)
   "pictureRefUrl": "https://images.unsplash.com/...", // 👈 URL des Bilds (Achtung: genauer Bildlink ist wichtig)
-  "callToAction": "Mehr erfahren ❯", // 👈 Anzeige des CTA-Buttons (WICHTIG: wird nur im primären Link angezeigt)
-  "description": "Visionäres Denken, Kreativität und ein Flair für guten Softwarecode – so geht's bei uns weiter..." // 👈 angezeigter Text
+  "callToAction": "Mehr erfahren ❯", // 👈 Anzeige des CTA-Buttons (WICHTIG: wird nur im primären Link angezeigt) 5️⃣
+  "description": "Visionäres Denken, Kreativität und ein Flair für guten Softwarecode – so geht's bei uns weiter..." // 👈 angezeigter Text 4️⃣
 }
 ```
-
-
-## Kacheldarstellung (Standard)
-Die linke Seite (1) wird wie im obigen Beispiel immer für den primären Link genutzt, die rechte Seite (2) für die sekundären Links. Es können bis zu vier sekundäre Links hinterlegt werden, wobei sich die Darstellung je nach Anzahl der Links dynamisch anpasst.
-
-{% include figure.html alt='Benutzer-Flow (Standard)' src='/assets/images/beeConnect/beeEssentials-relevant-links.png' %}
-
-## Dynamische Darstellung
-
-{% include figure.html alt='Benutzer-Flow (Standard)' src='/assets/images/beeConnect/beeEssentials-relevant-links-dynamic.png' %}
-
-## Banner Darstellung
-
-{% include figure.html alt='Benutzer-Flow (Standard)' src='/assets/images/beeConnect/beeEssentials-relevant-links-banner.png' %}
-
-## Header-Navigation Darstellung
-
-{% include figure.html alt='Benutzer-Flow (Standard)' src='/assets/images/beeConnect/beeEssentials-relevant-links-header.png' %}
-
-## Konfiguration und Einstellungen
-Nebst dem Anzeigestil, kann auch die Höhe des Webparts dynamisch festgelegt werden. Das wichtigste Konfigurationselement ist jedoch die Linkdeklaration, welche festlegt welcher Benutzergruppe welche Links gezeigt werden.
-
-**Für die Anpassung braucht es:**
-
-* Links für die wichtigsten Seiten abgestuft auf 1-5
-* Bilder für die entsprechenden Links
-* Die Rechtegruppe, für die entsprechende Linkdeklaration
-
-Diese Angaben könnnen unter "Deklaration des Links" angepasst werden.
-
-{% include figure.html alt='Benutzer-Flow (Standard)' src='/assets/images/beeConnect/beeEssentials-relevant-links-settings.png' %}
