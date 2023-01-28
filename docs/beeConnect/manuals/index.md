@@ -1,6 +1,6 @@
 ---
 layout: docs
-navigation: beeconnect
+navigation: beeconnect_manuals
 title: Bedienung
 hideToc: true
 ---

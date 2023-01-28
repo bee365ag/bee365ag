@@ -1,7 +1,7 @@
 ---
 layout: docs
 type: manual
-navigation: beeconnect
+navigation: beeconnect_manuals
 title: "Form Buttons (Webpart)"
 ---
 
