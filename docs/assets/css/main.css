@@ -2,6 +2,10 @@
     padding: 1rem 1rem;
 }
 
+.nav-link.active {
+    font-weight: 600;
+}
+
 @media(min-width: 768px) {
     .bee-layout-docs {
         display: grid;
