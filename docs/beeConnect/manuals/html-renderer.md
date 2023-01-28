@@ -3,7 +3,6 @@ layout: docs
 type: manual
 navigation: beeconnect
 title: "HTML Renderer (Webpart)"
-hideToc: true
 ---
 
 Mit dem beeEssentials HTML Renderer kann man Daten von Data Provider Webparts anzeigen lassen oder HTML Code in Sharepoint schreiben.
