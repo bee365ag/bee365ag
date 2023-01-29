@@ -101,7 +101,7 @@ Die Header-Navigation ist eine einfache Möglichkeit, das Webpart innerhalb eine
 
 {% include alert.html type='info' caption='Hinweis' content='Die Links innerhalb der Header-Navigation gelten global – d.h. für alle Mitarbeitenden – und lassen sich NICHT nach spezifischen Benutzergruppen einschränken (Audience Targeting).' %}
 
-}
+
 ## Konfiguration und Einstellungen
 Das wichtigste Konfigurationselement ist die *Linkdeklaration*, welche die Eigenschaften der Linkfelder sowie das sogenannte *Audience Targeting* (siehe nächster Abschnitt) definiert. Danbeben lassen sich auch *Anzeigestil* und die Höhe des Webparts (dynamisch) festgelegen, sowie die Parameter für die *Header-Navigation* deklarieren.
 
