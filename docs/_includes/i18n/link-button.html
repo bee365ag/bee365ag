@@ -1,0 +1,22 @@
+{%- assign locale = include.locale | default: page.locale -%}
+{%- assign path = include.path | default: '' -%}
+{%- assign text = include.text | default: '' -%}
+
+{%- assign localized_collection = 'pages' -%}
+{%- if locale != 'default' %}
+{%- assign localized_collection = localized_collection | append: '_' | append: locale %}
+{%- assign path = path | prepend: '/' | prepend: localized_collection | prepend: '_' -%}
+{%- endif -%}
+
+{%- assign link_pages = site[localized_collection] %}
+{%- assign link_page = link_pages | where: 'path', path | first -%}
+{%- if link_page -%}
+<a href="{{site.baseurl}}{{link_page.url}}" >
+    <button type="button" class="btn btn-light btn-lg">{{text}}</button>
+ </a>
+{%- else -%}
+<a href="{{path}}" >
+    <button type="button" class="btn btn-light btn-lg">{{text}}</button>
+ </a>
+{%- endif -%}
+
