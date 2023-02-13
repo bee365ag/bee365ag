@@ -5,7 +5,7 @@ title:
 ---
 
 # beeSpaces App erfolgreich registriert ✅
-Vielen dank für das registrieren der beeSpaces App. Dies hat funktioniert.
+Vielen Dank für das registrieren der beeSpaces App. Dies hat funktioniert.
 
 
 <br>
