@@ -11,7 +11,6 @@ Vielen dank für das registrieren der beeSpaces App. Dies hat funktioniert.
 <br>
 Falls Sie die Installation Manuell überprüfen möchten, finden die beeSpaces App nun in ihrem Azure AD als Enterprise App registriert.
 
-DEMO SCREENSHOT - Muss noch aktualisiert werden
 {% include figure.html alt='Benutzer-Flow (Standard)' src='/assets/images/beeSpaces/azureenterpriseapps.png' %}
 <br>
 
