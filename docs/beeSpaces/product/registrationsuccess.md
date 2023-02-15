@@ -5,11 +5,11 @@ title:
 ---
 
 # beeSpaces App erfolgreich registriert ✅
-Vielen Dank für das registrieren der beeSpaces App. Dies hat funktioniert.
+Vielen Dank für das Registrieren der beeSpaces App. Dies hat funktioniert.
 
 
 <br>
-Falls Sie die Installation Manuell überprüfen möchten, finden die beeSpaces App nun in ihrem Azure AD als Enterprise App registriert.
+Falls Sie die Installation manuell überprüfen möchten, finden die beeSpaces App nun in ihrem Azure AD als Enterprise App registriert.
 
 {% include figure.html alt='Benutzer-Flow (Standard)' src='/assets/images/beeSpaces/azureenterpriseapps.png' %}
 <br>
