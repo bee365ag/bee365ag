@@ -6,11 +6,21 @@ title: Installationshinweise
 
 Alle zum Betrieb von *beeSpaces* notwendigen Komponenten werden von bee365 über einen proprietären Bereitstellungsmechanismus initial bereitgestellt. Die dafür benötigten Artefakte sind im SharePoint Online-Tenant des Kunden hinterlegt.
 
-## beeSpaces Applikations-Registrierung
-Zur Bereitstellung von beeSpaces muss die beeSpaces Applikation durch einen `Globalen Administrator` registriert werden. Dazu den [Link beeSpaces Applikation registrieren](https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=d3b952e6-6026-4cec-bcc2-ea95c47d1473&response_type=code&scope=https://graph.microsoft.com/.default){:target="_blank"} anwählen und mit einem Account mit `Globaler Administrator` Rolle anmelden.
+## Registrierung der *beeSpaces*-Applikations in Ihrer Azure AD
+Zur Bereitstellung von *beeSpaces* muss die *beeSpaces*-Appplikation in ihrer Azure AD (AAD) entlang der folgenden Schritten registriert werden:
 
-Das nachfolgende Fenster öffnet sich. Mit **Accept** werden die benötigten Berechtigungen gesetzt und die Applikation registriert. 
-{% include figure.html alt='beeSpaces Permission Request' src='/assets/images/beeSpaces/app-permission-request.png' %}
+1. Melden sie sich mit einem Benutzer, dem die Rolle  `Globaler Administrator` zugewiesen wurde, in ihrer Azure AD an.
+2. Rufen Sie innerhalb der Browser-Session den [Link zur Registrierung der *beeSpaces*-Applikation](https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=d3b952e6-6026-4cec-bcc2-ea95c47d1473&response_type=code&scope=https://graph.microsoft.com/.default){:target="_blank"} auf.
+3. Bestätigen Sie im nachfolgenden Fenster mittels Klick auf die Schaltfläche **Accept** die Registrierung der Applikation: 
+  {% include figure.html alt='beeSpaces Permission Request' src='/assets/images/beeSpaces/app-permission-request.png' %}
+  
+  Damit werden auch die für die Provisionierung notwendigen Berechtigungen innerhalb der App registriert.
+
+{% capture content %}
+Nach erfolgreicher Registrierung werden Sie automatisch auf eine Bestätitungsseite geleietet und erhalten weitere Informationen.
+{% endcapture %}
+{% include alert.html type='info' caption='Registrierung abschliessen' content=content %}
+
 
 ## Service-Accounts und Zugänge
 ### Bereitstellung und Betrieb
@@ -23,7 +33,6 @@ bee365 benötigt **zur initialen Bereitstellung** folgende Zugänge:
 Für den anschliessenden **Betrieb** sind folgende Zugänge nötig:
 * dauerhaften Service-Account: `SharePoint Administrator`, `Teams Administrator`, `Groups Administrator`
 * Zugang zur *Root Page* in SharePoint Online (Home Site) ist für den Service-Account gegeben (Site Administrator)
-
 {% include alert.html type='warning' caption='Wichtig' content='MFA und Conditional Access müssen für den Service-Account deaktiviert sein!' %}
 
 ### Support-Unterstützung
