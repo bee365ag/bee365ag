@@ -6,12 +6,17 @@ title: Installationshinweise
 
 Alle zum Betrieb von *beeSpaces* notwendigen Komponenten werden von bee365 über einen proprietären Bereitstellungsmechanismus initial bereitgestellt. Die dafür benötigten Artefakte sind im SharePoint Online-Tenant des Kunden hinterlegt.
 
+## beeSpaces Applikations-Registrierung
+Zur Bereitstellung von beeSpaces muss die beeSpaces Applikation durch einen `Globalen Administrator` registriert werden. Dazu den [Link beeSpaces Applikation registrieren](https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=d3b952e6-6026-4cec-bcc2-ea95c47d1473&response_type=code&scope=https://graph.microsoft.com/.default){:target="_blank"} anwählen und mit einem Account mit `Globaler Administrator` Rolle anmelden.
+
+Das nachfolgende Fenster öffnet sich. Mit **Accept** werden die benötigten Berechtigungen gesetzt und die Applikation registriert. 
+{% include figure.html alt='beeSpaces Permission Request' src='/assets/images/beeSpaces/app-permission-request.png' %}
 
 ## Service-Accounts und Zugänge
 ### Bereitstellung und Betrieb
 bee365 benötigt **zur initialen Bereitstellung** folgende Zugänge:
 * Zugriff auf Azure-Tenant, M365-Admin Center und *SharePoint Online*-Admin Center des Kunden
-* Administrator-Account: `Globaler Administrator` (ggf. unter Aufsicht des Kunden); nach Installation ist Downgrade auf `SharePoint Administrator` und `Teams Administrator` möglich
+* Administrator-Account: `SharePoint Administrator` und `Teams Administrator`
 * Zugang zum *Tenant App Catalog* (SharePoint Online) des Kunden existiert, Zugang durch Admin-Account (SPO Admin) gewährleistet
 * Zugang zur *Root Page* in SharePoint Online (Home Site) ist für den Service-Account gegeben (Site Administrator)
 
