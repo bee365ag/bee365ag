@@ -9,7 +9,7 @@ Vielen Dank für das Registrieren der *beeSpaces*-App in ihrer Azure Active Dire
 <br>Dies hat funktioniert!
 </p>
 
-Falls Sie die Installation manuell überprüfen möchten, finden die *beeSpaces*-App nun in ihrer Azure AD als [sogenannte **Enterprise App**](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/RegisteredApps){:target="_blank"} hinterlegt:
+Falls Sie die Installation manuell überprüfen möchten, finden die *beeSpaces*-App nun in ihrer Azure AD als [sogenannte **Enterprise App**](https://portal.azure.com/#view/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/~/AppAppsPreview/){:target="_blank"} hinterlegt:
 
 {% include figure.html alt='Azure Enterprise App' src='/assets/images/beeSpaces/azureenterpriseapps.png' %}
 <br>
