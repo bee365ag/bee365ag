@@ -4,6 +4,20 @@ navigation: beeconnect_releases
 title: Release Notes
 ---
 
+# smartintranet-webparts (1.1.0)
+## Änderungen
+* Webpart «myTodos»: behebt den Fehler in der chronologischen Darstellung der Tasks aus *Microsoft ToDo*, wobei gewisse Tasks unvorhersehbar gar nicht oder «falsch» dargestellt wurden (häufig aufgetreten aufgrund Anfragen-Drosselung – sog. Throttling – der *Microsoft Graph API* im Falle der Verwendung mehrerer Tasklisten des Benutzers)
+
+
+# beeEssentials (1.6.2) – Release 02/23
+## Neue Funktionen
+* Webpart «Relevant News»: Darstellung der Standard-Newsübersicht aus der jeweiligen Newsquelle (Site) in SharePoint: statt eines blossen Links auf die Homepage der Newsquelle (Site) wird die standardisierte Newsdarstellung von SharePoint Online gesetzt: <br/>`{Site der Newsquelle}/_layouts/15/news.aspx`
+* Webpart «Relevant News»: Anzeige des Veröffentlichungsdatums eines News-Posts in relativer Form (bspw. vor zwei Tagen, vor 10 Wochen, ...), welche wahlweise per Konfiguration unterdrückt werden kann
+
+## Änderungen
+* Webpart «Relevant News»: verbesserte Information (EN) bei Newsgruppen ohne Inhalt
+
+
 # beeEssentials (1.6.1) – Release 01/23
 ## Änderungen
 * Webpart «Relevant News»: verbessert die Darstellung von News auf mobilen Devices
