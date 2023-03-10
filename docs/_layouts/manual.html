@@ -1,0 +1,24 @@
+---
+layout: manual
+---
+{% include i18n/i18n %}
+
+<div class="bee-layout-docs">
+    <aside class="bee-layout-docs-nav">
+        {% include side-nav.html %}
+    </aside>
+    <div class="bee-layout-docs-main">
+        <h1>{{ page.title }}</h1>
+        
+        {% if page.hideToc %}
+        {% else %}
+        
+        <div class="bee-layout-toc col-sm-12 col-md-6">
+            <dt>{{ strings.tocHeader }}</dt>
+            {% include toc.html html=content class="list-unstyled toc-listing" id="bee-layout-toc" %}
+        </div>
+        {% endif %}
+
+        {{ content }}
+    </div>
+</div>
