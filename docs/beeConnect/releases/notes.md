@@ -4,6 +4,12 @@ navigation: beeconnect_releases
 title: Release Notes
 ---
 
+# smartintranet-webparts (1.1.3) – Release 03/23
+## Änderungen
+* Webpart «myTodos»: behebt einen weiteren Fehler in der chronologisch korrekten Darstellung mehrerer Tasks aus Microsoft Todo, bei welchem gewisse Tasks aufgrund eines Abfragefehlers auf der Microsoft Graph API nicht geladen wurden
+* Webpart «myTodos»: korrigiert die Darstellung der Datumsanzeige, wobei UTC-Zeitangaben nun korrekt in die lokale Zeitzone des angemeldeten Benutzers konvertiert werden
+
+
 # smartintranet-webparts (1.1.0)
 ## Änderungen
 * Webpart «myTodos»: behebt den Fehler in der chronologischen Darstellung der Tasks aus *Microsoft ToDo*, wobei gewisse Tasks unvorhersehbar gar nicht oder «falsch» dargestellt wurden (häufig aufgetreten aufgrund Anfragen-Drosselung – sog. Throttling – der *Microsoft Graph API* im Falle der Verwendung mehrerer Tasklisten des Benutzers)

@@ -4,6 +4,13 @@ navigation: beeSpaces_releases
 title: Release Notes
 ---
 
+# beeProvisioning-webparts (1.4.0) – Release 03/23
+## Neue Funktionen
+* Order Form Wizard: erweitert die Webpart-Einstellungen um ein neues, moderneres und dem SharePoint Online-UI angelehnten Layout für die Auswahl der Workspace Templates
+* Order Form Wizard: erweitert die Anzeige der Felder eines Workspace Templates um *Field Formatters*, welche in den *Engine Settings* des Order Form Wizards spezifisch zugewiesen werden können, wodurch bestimmte Darstellungsoptionen für den Benutzer im UI angezeigt werden
+* Order Form Wizard: erweitert die Auswahl eines Workspace Templates um die Anzeige einer konfigurierbaren *Disclaimer*-Seite, die automatisch angezeigt wird bei der Auswahl des Templates und dessen Kenntnisnahme vom Benutzer bestätigt werden muss
+
+
 # beeProvisioning-webparts (1.3.0) – Release 01/23
 ## Neue Funktionen
 * Order Form Wizard: erweitert die Übersetzungen (i18n) um zusätzliche 🇨🇭 Landessprachen (it / fr)
