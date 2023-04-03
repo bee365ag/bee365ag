@@ -30,7 +30,7 @@ Der Bestellprozess ist in 4 (respektive 5, sofern **Lebenszyklus** aktiv ist) Ph
 
 {% include figure.html alt='Benutzer-Flow (Standard)' src='/assets/images/beeSpaces/provisioning-ofw-chooseTemplate.png' %}
 
-# Formatters
+### Formatters
 
 Formatters sind eine nützliche Funktion in den Engine-Einstellungen, mit denen du das Aussehen bestimmter Eingabefelder im Bestellprozess anpassen kannst. 
 
