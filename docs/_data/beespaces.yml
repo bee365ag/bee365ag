@@ -9,3 +9,6 @@ navigation:
   - beeSpaces/product/architecture
   - beeSpaces/product/users-security
   - beeSpaces/product/journey
+  - index: beeSpaces/features/index
+  items:
+  - beeSpaces/product/features/formatters
