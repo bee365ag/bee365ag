@@ -78,8 +78,6 @@ Ein **Template-Disclaimer** ist ein wichtiger Bestandteil beim Bestellprozess vo
 
 Der Zweck eines Template-Disclaimers besteht darin, die Verantwortung des SharePoint-Betreibers zu begrenzen und rechtliche Risiken zu minimieren. Er kann beispielsweise Haftungsausschlüsse, Datenschutzerklärungen oder geistige Eigentumsrechte enthalten. Auch ist meistens darin geregelt, dass keine Daten aus den Sharepoint Räumen unbeaufsichtigt mit externen Personen geteilt werden, die keine Projektmitarbeiter sind, um Datenabfluss zu vermeiden und das Firmengeheimnis zu schützen.
 
-Durch die Verwendung von Template-Disclaimers können Unternehmen sicherstellen, dass ihre SharePoint-Räume den geltenden Gesetzen und Vorschriften entsprechen und dass die Benutzer über ihre Rechte und Pflichten informiert sind. Dies kann dazu beitragen, potenzielle Risiken und rechtliche Streitigkeiten zu vermeiden und das Vertrauen der Benutzer in das Unternehmen und die SharePoint Umgebung zu stärken.
-
 #### Hinzufügen eines Listeneintrags mit einem Disclaimer-Link
 
 Um einen Listeneintrag hinzuzufügen, der den Template-Disclaimer auf SharePoint aktiviert und die Webseite mit dem Disclaimer-Text hinterlegt, führen Sie die folgenden Schritte durch:
