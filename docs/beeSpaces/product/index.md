@@ -69,6 +69,7 @@ Hier ist ein Beispiel für die Verwendung von Formatters:
 
 Es ist wichtig zu beachten, dass die Formatters nur für das visuelle Erscheinungsbild der Felder verwendet werden und keine Steuerungsfunktion im UX-Flow haben. Ihr Zweck besteht darin, die visuelle Darstellung zu verbessern und das Benutzererlebnis insgesamt zu verbessern.
 
+
 ### Template-Disclaimer bei der Provisionierung
 
 Ein **Template-Disclaimer** ist ein wichtiger Bestandteil beim Bestellprozess von SharePoint & Teams-Räumen. Es handelt sich um eine standardisierte rechtliche Erklärung, die in der Regel am Ende des Prozesses in einem Popup Fenster eingeblendet wird. Dort muss man bestätigen, die Firmeninternen Weisungen und Richtlinien zu Sharepoint oder Teams Räumen gelesen und verstanden zu haben.
