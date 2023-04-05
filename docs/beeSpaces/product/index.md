@@ -72,7 +72,7 @@ Es ist wichtig zu beachten, dass die Formatters nur für das visuelle Erscheinun
 
 ### Template-Disclaimer bei der Provisionierung
 
-Ein **Template-Disclaimer** ist ein wichtiger Bestandteil beim Bestellprozess von SharePoint & Teams-Räumen. Es handelt sich um eine standardisierte rechtliche Erklärung, die in der Regel am Ende des Prozesses in einem Popup Fenster eingeblendet wird. Dort muss man bestätigen, die Firmeninternen Weisungen und Richtlinien zu Sharepoint oder Teams Räumen gelesen und verstanden zu haben.
+Ein **Template-Disclaimer** ist ein wichtiger Bestandteil beim Bestellprozess von SharePoint & Teams-Räumen. Es handelt sich um eine standardisierte rechtliche Erklärung, die in der Regel am Ende des Prozesses in einem Popup Fenster eingeblendet wird. Dort muss man bestätigen, die firmeninternen Weisungen und Richtlinien zu Sharepoint oder Teams Räumen gelesen und verstanden zu haben.
 
 {% include figure.html alt='Haftungsausschluss' src='/assets/images/beeSpaces/Hauftungsausschluss.png' %}
 
