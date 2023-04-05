@@ -69,6 +69,26 @@ Hier ist ein Beispiel für die Verwendung von Formatters:
 
 Es ist wichtig zu beachten, dass die Formatters nur für das visuelle Erscheinungsbild der Felder verwendet werden und keine Steuerungsfunktion im UX-Flow haben. Ihr Zweck besteht darin, die visuelle Darstellung zu verbessern und das Benutzererlebnis insgesamt zu verbessern.
 
+### Template-Disclaimer bei der Provisionierung
+
+Ein **Template-Disclaimer** ist ein wichtiger Bestandteil beim Bestellprozess von SharePoint & Teams-Räumen. Es handelt sich um eine standardisierte rechtliche Erklärung, die in der Regel am Ende des Prozesses in einem Popup Fenster eingeblendet wird. Dort muss man bestätigen, die Firmeninternen Weisungen und Richtlinien zu Sharepoint oder Teams Räumen gelesen und verstanden zu haben.
+
+{% include figure.html alt='Haftungsausschluss' src='/assets/images/beeSpaces/Hauftungsausschluss.png' %}
+
+Der Zweck eines Template-Disclaimers besteht darin, die Verantwortung des SharePoint-Betreibers zu begrenzen und rechtliche Risiken zu minimieren. Er kann beispielsweise Haftungsausschlüsse, Datenschutzerklärungen oder geistige Eigentumsrechte enthalten. Auch ist meistens darin geregelt, dass keine Daten aus den Sharepoint Räumen unbeaufsichtigt mit externen Personen geteilt werden, die keine Projektmitarbeiter sind, um Datenabfluss zu vermeiden und das Firmengeheimnis zu schützen.
+
+Durch die Verwendung von Template-Disclaimers können Unternehmen sicherstellen, dass ihre SharePoint-Räume den geltenden Gesetzen und Vorschriften entsprechen und dass die Benutzer über ihre Rechte und Pflichten informiert sind. Dies kann dazu beitragen, potenzielle Risiken und rechtliche Streitigkeiten zu vermeiden und das Vertrauen der Benutzer in das Unternehmen und die SharePoint Umgebung zu stärken.
+
+#### Hinzufügen eines Listeneintrags mit einem Disclaimer-Link
+
+Um einen Listeneintrag hinzuzufügen, der den Template-Disclaimer auf SharePoint aktiviert und die Webseite mit dem Disclaimer-Text hinterlegt, führen Sie die folgenden Schritte durch:
+
+1. Erstellen Sie einen Listeneintrag in der Template-Liste unter der Spalte Disclaimer.
+2. Hinterlegen Sie den Link zur erstellten Webseite mit dem gewünschten Disclaimer-Text.
+3. Testen Sie den Disclaimer im Bestellprozess.
+
+Dies stellt sicher, dass der Benutzer den Disclaimer akzeptiert hat und informiert ist über die geltenden Regeln und Vorschriften in Bezug auf die Nutzung des SharePoint-Raums.
+
 
 ### Genehmigungen (nicht im Standard von beeSpaces enthalten)
 Mithilfe von Genehmigungen (sog. «Approvals») kann die Erstellung von Workspaces zusätzlich kontrolliert werden. Je nach *Workspace Template* kann ein Approval Prozess hinterlegt werden, bei welchem zuerst eine oder mehrere definierte Approver-Groups die Bestellung genehmigen müssen. Anschliessend wird der Standard-Provisioning Prozess gestartet.
