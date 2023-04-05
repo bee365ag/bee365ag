@@ -83,7 +83,7 @@ Der Zweck eines Template-Disclaimers besteht darin, die Verantwortung des ShareP
 Um einen Listeneintrag hinzuzufügen, der den Template-Disclaimer auf SharePoint aktiviert und die Webseite mit dem Disclaimer-Text hinterlegt, führen Sie die folgenden Schritte durch:
 
 1. Erstellen Sie einen Listeneintrag in der Template-Liste unter der Spalte Disclaimer.
-2. Hinterlegen Sie den Link zur erstellten Webseite mit dem gewünschten Disclaimer-Text.
+2. Hinterlegen Sie den Link zur erstellten Webseiteseite mit dem gewünschten Disclaimer-Text.
 3. Testen Sie den Disclaimer im Bestellprozess.
 
 Dies stellt sicher, dass der Benutzer den Disclaimer akzeptiert hat und informiert ist über die geltenden Regeln und Vorschriften in Bezug auf die Nutzung des SharePoint-Raums.
