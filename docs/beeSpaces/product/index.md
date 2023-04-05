@@ -86,9 +86,6 @@ Um einen Listeneintrag hinzuzufügen, der den Template-Disclaimer auf SharePoint
 2. Hinterlegen Sie den Link zur erstellten Webseiteseite mit dem gewünschten Disclaimer-Text.
 3. Testen Sie den Disclaimer im Bestellprozess.
 
-Dies stellt sicher, dass der Benutzer den Disclaimer akzeptiert hat und informiert ist über die geltenden Regeln und Vorschriften in Bezug auf die Nutzung des SharePoint-Raums.
-
-
 ### Genehmigungen (nicht im Standard von beeSpaces enthalten)
 Mithilfe von Genehmigungen (sog. «Approvals») kann die Erstellung von Workspaces zusätzlich kontrolliert werden. Je nach *Workspace Template* kann ein Approval Prozess hinterlegt werden, bei welchem zuerst eine oder mehrere definierte Approver-Groups die Bestellung genehmigen müssen. Anschliessend wird der Standard-Provisioning Prozess gestartet.
 
