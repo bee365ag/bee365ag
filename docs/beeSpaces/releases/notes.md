@@ -4,6 +4,14 @@ navigation: beeSpaces_releases
 title: Release Notes
 ---
 
+# beeProvisioning-webparts (1.4.1) – Release 05/23
+## Neue Funktionen
+* Order Form Wizard: ermöglicht die Umsetzung von Feldeinschaften zur Begrenzung der Zeichenzahl in bestimmten Feldern, die in Templates verwendet werden
+
+## Änderungen
+* Order Form Wizard: korrigiert Fehler im Umgang mit `handlebars`-Templates, wobei nun alle ausgewiesenen Befehle vollständig einsatzbereit sind
+
+
 # beeProvisioning-webparts (1.4.0) – Release 03/23
 ## Neue Funktionen
 * Order Form Wizard: erweitert die Webpart-Einstellungen um ein neues, moderneres und dem SharePoint Online-UI angelehnten Layout für die Auswahl der Workspace Templates
