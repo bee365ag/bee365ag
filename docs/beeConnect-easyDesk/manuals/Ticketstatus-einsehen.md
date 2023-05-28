@@ -1,8 +1,11 @@
 ---
 layout: manual
 title: Ticketstatus einsehen
+hideToc: true
 ---
+
 Jeder User kann in easyDESK den Stand der bereits erfassten Tickets einsehen. So kann überprüft werden, ob das Ticket bereits in Bearbeitung ist oder noch nicht angegangen wurde.
+
 1. Öffnen Sie easyDESK und navigieren Sie zur Startseite, sofern Sie sich nicht schon dort befinden.
 2. Unter “Meine offenen Tickets” werden Ihre offenen Tickets angezeigt.
 ![Meine offenen Tickets](/docs/assets/images/beeConnect/beeConnect-easyDESK-MeineOffenenTickets.png)
