@@ -4,7 +4,7 @@ title: Berechtigungen
 ---
 # Berechtigungen der Graph API
 
-API-Berechtigungen – Für die Abfragen im Dashboard sind folgende Graph-API berechitungen erforderlich:
+API-Berechtigungen – Für die Abfragen im Dashboard sind folgende Graph-API Berechtigungen erforderlich:
 
 
 |API/Berechtigungsname | Typ |
