@@ -26,6 +26,6 @@ topics:
   button: Erfahre mehr
 ---
 
-Das MediaRepo ist ein AddOn von [beeConnect](/docs/beeConnect/intro/index.md), welches auch ohne beeConnect betrieben werden kann. Mithilfe vom MediaRepo können unterschiedlichste Foto-, Video- und Audiodateien strukturiert gespeichert werden und mit einer Suchfunktion abgerufen werden. Durch die Metadaten Tags lassen sich die Dateien bestimmten Kategorien zuordnen, um die Suche und Ablage noch weiter zu vereinfachen.
+Das MediaRepo ist ein AddOn von [beeConnect](../../beeConnect/index.md), welches auch ohne beeConnect betrieben werden kann. Mithilfe vom MediaRepo können unterschiedlichste Foto-, Video- und Audiodateien strukturiert gespeichert werden und mit einer Suchfunktion abgerufen werden. Durch die Metadaten Tags lassen sich die Dateien bestimmten Kategorien zuordnen, um die Suche und Ablage noch weiter zu vereinfachen.
 
 # Mit dem MediaRepo arbeiten
