@@ -51,15 +51,13 @@ Du kannst mehrere Formatters verwenden, aber jeder Formatter muss einem anderen 
 Hier ist ein Beispiel für die Verwendung von Formatters:
 
 ~~~
-"formatters": [
-{
-"fieldRef": "Title",
-"format": {
-"prefix": "PRJ-"
-},
-"notes": "Der Workspace wird so heissen:'PRJ': {{computed.teamTitle}}"
-}
-]
+"formatters": [{
+    "fieldRef": "Title",
+    "format": {
+        "prefix": "PRJ-"
+    },
+    "notes": "Der Workspace wird so heissen:'PRJ': {{computed.teamTitle}}"
+}]
 ~~~
 
 #### Ergebnis
