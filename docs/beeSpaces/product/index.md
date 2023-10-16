@@ -32,23 +32,17 @@ Der Bestellprozess ist in 4 (respektive 5, sofern **Lebenszyklus** aktiv ist) Ph
 
 ### Formatters
 
-Formatters sind eine nützliche Funktion in den Engine-Einstellungen, mit denen du das Aussehen bestimmter Eingabefelder im Bestellprozess anpassen kannst. 
+Formatters sind eine nützliche Funktion in den Engine-Einstellungen, mit denen das Aussehen bestimmter Eingabefelder im Bestellprozess angepasst werden können. 
 
-#### Wie funktionieren Formatters?
+Formatters sind wie kosmetische Verbesserungen für die Felder, die während des Bestellprozesses verwendet werden. Mit ihnen wird das visuelle Erscheinungsbild der Felder erweitert, um den Bedürfnissen von zusätzlicher Information noch besser gerecht zu werden. 
 
-Formatters sind wie kosmetische Verbesserungen für die Felder, die du im Bestellprozess verwendest. Mit ihnen kannst du das visuelle Erscheinungsbild der Felder anpassen, um den eigenen Bedürfnissen besser gerecht zu werden. 
+Formatters werden verwendet, um das Aussehen der Felder im Bestellprozess anzupassen. Beispielsweise kann ein Prefix zu einem Feld hinzugefügt oder eine Notiz unter einem Feld angezeigt werden – oder dem Benutzer erhält allgemein zusätzliche Informationen.
 
-#### Was kannst du mit Formatters machen?
-
-Du kannst Formatters verwenden, um das Aussehen der Felder anzupassen. Beispielsweise kannst du einen Prefix zu einem Feld hinzufügen oder eine Notiz unter einem Feld anzeigen, um dem Benutzer zusätzliche Informationen zu geben.
-
-#### Wie viele Formatters kannst du verwenden?
-
-Du kannst mehrere Formatters verwenden, aber jeder Formatter muss einem anderen Feld zugewiesen werden. Es ist wichtig, sicherzustellen, dass jedes Feld nur einen Formatter zugewiesen hat, um Konflikte oder Verwirrungen zu vermeiden.
+Es lassen sich mehrere Formatters verwenden, aber jeder Formatter muss einem anderen Feld zugewiesen werden. Es ist wichtig, sicherzustellen, dass jedes Feld nur einen Formatter zugewiesen hat, um Konflikte oder Verwirrungen zu vermeiden.
 
 #### Beispiel
 
-Hier ist ein Beispiel für die Verwendung von Formatters:
+Folgendes Beispiel veranschaulicht die Anwendung und das Ergebnis von Formatters:
 
 ~~~
 "formatters": [{
@@ -60,29 +54,48 @@ Hier ist ein Beispiel für die Verwendung von Formatters:
 }]
 ~~~
 
-#### Ergebnis
 {% include figure.html alt='Formatter im Bestellprozess' src='/assets/images/beeSpaces/formatter-im-ofw.png' %}
 
-#### Wichtig zu beachten
-
+{% capture content %}
 Es ist wichtig zu beachten, dass die Formatters nur für das visuelle Erscheinungsbild der Felder verwendet werden und keine Steuerungsfunktion im UX-Flow haben. Ihr Zweck besteht darin, die visuelle Darstellung zu verbessern und das Benutzererlebnis insgesamt zu verbessern.
+{% endcapture %}
+{% include alert.html type='info' caption='Hinweis' content=content %}
 
 
-### Template-Disclaimer bei der Provisionierung
 
-Ein **Template-Disclaimer** ist ein wichtiger Bestandteil beim Bestellprozess von SharePoint & Teams-Räumen. Es handelt sich um eine standardisierte rechtliche Erklärung, die in der Regel am Ende des Prozesses in einem Popup Fenster eingeblendet wird. Dort muss man bestätigen, die firmeninternen Weisungen und Richtlinien zu Sharepoint oder Teams Räumen gelesen und verstanden zu haben.
+### Template-Disclaimer im Bestellprozess
+
+Ein **Template-Disclaimer** ist ein wichtiger Bestandteil beim Bestellprozess von SharePoint- & Teams-Workspaces. Dabei handelt es sich um eine standardisierte rechtliche Erklärung, die zu Beginn des Bestellprozesses in einem Popup-Fenster eingeblendet wird. Der Benutzer bestätigt, die firmeninternen Weisungen und Richtlinien, die mit der Bestellung des Workspaces einhergehen, gelesen und verstanden zu haben:
 
 {% include figure.html alt='Haftungsausschluss' src='/assets/images/beeSpaces/Hauftungsausschluss.png' %}
 
-Der Zweck eines Template-Disclaimers besteht darin, die Verantwortung des SharePoint-Betreibers zu begrenzen und rechtliche Risiken zu minimieren. Er kann beispielsweise Haftungsausschlüsse, Datenschutzerklärungen oder geistige Eigentumsrechte enthalten. Auch ist meistens darin geregelt, dass keine Daten aus den Sharepoint Räumen unbeaufsichtigt mit externen Personen geteilt werden, die keine Projektmitarbeiter sind, um Datenabfluss zu vermeiden und das Firmengeheimnis zu schützen.
+Der Zweck eines Template-Disclaimers enthält sinnvollerweise:
+* Haftungsausschlüsse oder Datenschutzerklärungen
+* Hinweise zu geistigen Eigentumsrechten
+* weiterführende oder bebilderte Erklärungen zum Einsatzzweck oder -nutzen des Workspaces
+* Regelungen / Datenhandling in Bezug auf die im Workspace enthaltenen Dateien (bspw. Teilen von Dateien mit internen / externen Personen)
+
 
 #### Hinzufügen eines Listeneintrags mit einem Disclaimer-Link
 
-Um einen Listeneintrag hinzuzufügen, der den Template-Disclaimer auf SharePoint aktiviert und die Webseite mit dem Disclaimer-Text hinterlegt, führen Sie die folgenden Schritte durch:
+Um einen Listeneintrag hinzuzufügen, der den Template-Disclaimer zu Beginn des Bestellprozesses eines bestimmten Workspaces anzeigt, führen Sie die folgenden Schritte durch:
 
-1. Erstellen Sie einen Listeneintrag in der Template-Liste unter der Spalte Disclaimer.
-2. Hinterlegen Sie den Link zur erstellten Webseiteseite mit dem gewünschten Disclaimer-Text.
+1. Aktivieren Sie in den `Workspace Templates` über den Button `in Rasteransicht bearbeiten` die Spalte `Disclaimer`.
+2. Erweitern Sie den Listeneintrag mit dem entsprechenden Template, das den Disclaimer benötigt, unter der Spalte `Disclaimer`:
+    * Hinterlegen Sie *auf jeden Fall* im Feld `Link` den Link zur Ressource des Disclaimers (muss sich als Web-Content aufrufen lassen; kann bspw. eine SharePoint Page oder auch eine externe Webpage sein)
+    * Legen Sie im Feld `Anzeigetext` fest, zu welchem Verhalten der Disclaimer den Benutzer führen soll:
+        * `mandatory` oder `obligatorisch`: Disclaimer wird angezeigt mit zwei Bestätigungsoptionen; `Abbrechen` (Kreuz) führt im Bestellprozess zurück zur Templateauswahl, `Bestätigung` (Haken) führt im Bestellprozess zum nächsten Schritt
+        * `<beliebiger Text>`: ein Disclaimer wird angzeigt, muss aber zwingend bestätigt werden (kann als «gelesen» oder «zur Kenntnis genommen» gedeutet werden)
 3. Testen Sie den Disclaimer im Bestellprozess.
+
+{% include figure.html alt='Disclaimer hinzufügen' src='/assets/images/beeSpaces/disclaimer-example.png' %}
+
+{% capture content %}
+Wenn kein Link im Listenfeld `Disclaimer` hinterlegt ist, so geht man im Wizard einen Schritt weiter. Der Disclaimer wird nicht angezeigt
+{% endcapture %}
+{% include alert.html type='info' caption='Hinweis' content=content %}
+
+
 
 ### Genehmigungen (nicht im Standard von beeSpaces enthalten)
 Mithilfe von Genehmigungen (sog. «Approvals») kann die Erstellung von Workspaces zusätzlich kontrolliert werden. Je nach *Workspace Template* kann ein Approval Prozess hinterlegt werden, bei welchem zuerst eine oder mehrere definierte Approver-Groups die Bestellung genehmigen müssen. Anschliessend wird der Standard-Provisioning Prozess gestartet.
